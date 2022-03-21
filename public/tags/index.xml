@@ -6,62 +6,7 @@
     <description>Recent content in Tags on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 20 Dec 2021 06:44:55 +0000</lastBuildDate><atom:link href="https://johannes-pirmann.com/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Crypto</title>
-      <link>https://johannes-pirmann.com/tags/Crypto/</link>
-      <pubDate>Mon, 20 Dec 2021 06:44:55 +0000</pubDate>
-      
-      <guid>https://johannes-pirmann.com/tags/Crypto/</guid>
-      
-        <description></description>
-      
-    </item>
-    
-    <item>
-      <title>Economy</title>
-      <link>https://johannes-pirmann.com/tags/Economy/</link>
-      <pubDate>Mon, 20 Dec 2021 06:44:55 +0000</pubDate>
-      
-      <guid>https://johannes-pirmann.com/tags/Economy/</guid>
-      
-        <description></description>
-      
-    </item>
-    
-    <item>
-      <title>Money</title>
-      <link>https://johannes-pirmann.com/tags/Money/</link>
-      <pubDate>Mon, 20 Dec 2021 06:44:55 +0000</pubDate>
-      
-      <guid>https://johannes-pirmann.com/tags/Money/</guid>
-      
-        <description></description>
-      
-    </item>
-    
-    <item>
-      <title>Newsletter</title>
-      <link>https://johannes-pirmann.com/tags/Newsletter/</link>
-      <pubDate>Mon, 20 Dec 2021 06:44:55 +0000</pubDate>
-      
-      <guid>https://johannes-pirmann.com/tags/Newsletter/</guid>
-      
-        <description></description>
-      
-    </item>
-    
-    <item>
-      <title>Stocks</title>
-      <link>https://johannes-pirmann.com/tags/Stocks/</link>
-      <pubDate>Mon, 20 Dec 2021 06:44:55 +0000</pubDate>
-      
-      <guid>https://johannes-pirmann.com/tags/Stocks/</guid>
-      
-        <description></description>
-      
-    </item>
-    
+    <lastBuildDate>Fri, 29 Oct 2021 18:39:12 +0000</lastBuildDate><atom:link href="https://johannes-pirmann.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Ansible</title>
       <link>https://johannes-pirmann.com/tags/Ansible/</link>
@@ -206,6 +151,17 @@
     </item>
     
     <item>
+      <title>Crypto</title>
+      <link>https://johannes-pirmann.com/tags/Crypto/</link>
+      <pubDate>Fri, 09 Jul 2021 07:07:12 +0000</pubDate>
+      
+      <guid>https://johannes-pirmann.com/tags/Crypto/</guid>
+      
+        <description></description>
+      
+    </item>
+    
+    <item>
       <title>Cryptocurrency</title>
       <link>https://johannes-pirmann.com/tags/Cryptocurrency/</link>
       <pubDate>Fri, 09 Jul 2021 07:07:12 +0000</pubDate>
@@ -239,6 +195,17 @@
     </item>
     
     <item>
+      <title>Money</title>
+      <link>https://johannes-pirmann.com/tags/Money/</link>
+      <pubDate>Fri, 09 Jul 2021 07:07:12 +0000</pubDate>
+      
+      <guid>https://johannes-pirmann.com/tags/Money/</guid>
+      
+        <description></description>
+      
+    </item>
+    
+    <item>
       <title>Nano X</title>
       <link>https://johannes-pirmann.com/tags/Nano-X/</link>
       <pubDate>Fri, 09 Jul 2021 07:07:12 +0000</pubDate>
@@ -261,17 +228,6 @@
     </item>
     
     <item>
-      <title>who to follow</title>
-      <link>https://johannes-pirmann.com/tags/who-to-follow/</link>
-      <pubDate>Fri, 02 Jul 2021 11:59:09 +0000</pubDate>
-      
-      <guid>https://johannes-pirmann.com/tags/who-to-follow/</guid>
-      
-        <description></description>
-      
-    </item>
-    
-    <item>
       <title>aws</title>
       <link>https://johannes-pirmann.com/tags/aws/</link>
       <pubDate>Wed, 16 Jun 2021 15:34:57 +0000</pubDate>
@@ -288,17 +244,6 @@
       <pubDate>Wed, 16 Jun 2021 15:34:57 +0000</pubDate>
       
       <guid>https://johannes-pirmann.com/tags/Getting-Started/</guid>
-      
-        <description></description>
-      
-    </item>
-    
-    <item>
-      <title>python</title>
-      <link>https://johannes-pirmann.com/tags/python/</link>
-      <pubDate>Wed, 16 Jun 2021 14:35:20 +0000</pubDate>
-      
-      <guid>https://johannes-pirmann.com/tags/python/</guid>
       
         <description></description>
       
@@ -343,6 +288,17 @@
       <pubDate>Tue, 01 Jun 2021 16:26:57 +0000</pubDate>
       
       <guid>https://johannes-pirmann.com/tags/flask/</guid>
+      
+        <description></description>
+      
+    </item>
+    
+    <item>
+      <title>python</title>
+      <link>https://johannes-pirmann.com/tags/python/</link>
+      <pubDate>Tue, 01 Jun 2021 16:26:57 +0000</pubDate>
+      
+      <guid>https://johannes-pirmann.com/tags/python/</guid>
       
         <description></description>
       

@@ -6,20 +6,7 @@
     <description>Recent content in python on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 16 Jun 2021 14:35:20 +0000</lastBuildDate><atom:link href="https://johannes-pirmann.com/tags/python/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>AWS Infrastructure with Python</title>
-      <link>https://johannes-pirmann.com/post/aws-infrastructure-with-python/</link>
-      <pubDate>Wed, 16 Jun 2021 14:35:20 +0000</pubDate>
-      
-      <guid>https://johannes-pirmann.com/post/aws-infrastructure-with-python/</guid>
-      
-        <description>Prerequisites Please follow this article to setup your AWS development environment.
-Setting up the directory In the terminal go to the location where you want to put this project and create a new directory with mkdir and switch into the new directory with cd.
-sudo mkdir directory_name cd directory_name Initialize the default CDK app cdk init app --language python Creating a virtual environment for our dependencies If you are using python 3.</description>
-      
-    </item>
-    
+    <lastBuildDate>Tue, 01 Jun 2021 16:26:57 +0000</lastBuildDate><atom:link href="https://johannes-pirmann.com/tags/python/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Control a Relay with a Raspberry Pi and Python</title>
       <link>https://johannes-pirmann.com/post/control-a-relay/</link>

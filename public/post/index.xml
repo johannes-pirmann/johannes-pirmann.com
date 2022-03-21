@@ -6,33 +6,7 @@
     <description>Recent content in Posts on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 20 Dec 2021 06:44:55 +0000</lastBuildDate><atom:link href="https://johannes-pirmann.com/post/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Are we up for a crash? | JP Weekly 001</title>
-      <link>https://johannes-pirmann.com/post/are-we-up-for-a-crash/</link>
-      <pubDate>Mon, 20 Dec 2021 06:44:55 +0000</pubDate>
-      
-      <guid>https://johannes-pirmann.com/post/are-we-up-for-a-crash/</guid>
-      
-        <description>A lot of people are saying for years that we are in a bubble and that the market will crash soon. Now we might come to this point.
-S&amp;amp;P 500 The market is slowly turning more into the red.
- 1 month performance of S&amp;amp;P500 on 20.12.2021
-  Twitter And the rumors on twitter are increasing.
-The theme over the next several weeks is likely to be DEFLATION of risk assets.</description>
-      
-    </item>
-    
-    <item>
-      <title>What&#39;s trending?</title>
-      <link>https://johannes-pirmann.com/post/whats-trending/</link>
-      <pubDate>Wed, 15 Dec 2021 12:39:27 +0000</pubDate>
-      
-      <guid>https://johannes-pirmann.com/post/whats-trending/</guid>
-      
-        <description></description>
-      
-    </item>
-    
+    <lastBuildDate>Fri, 29 Oct 2021 18:39:12 +0000</lastBuildDate><atom:link href="https://johannes-pirmann.com/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Setup Ubuntu 20.04 Server with Ansible</title>
       <link>https://johannes-pirmann.com/post/setup-ubuntu-20-04-server-with-ansible/</link>
@@ -114,29 +88,6 @@ The Nano X is more convenient to use than the Nano S on the go as it has bluetoo
     </item>
     
     <item>
-      <title>Who to follow in Crypto?</title>
-      <link>https://johannes-pirmann.com/post/crypto-who-to-follow/</link>
-      <pubDate>Fri, 02 Jul 2021 11:59:09 +0000</pubDate>
-      
-      <guid>https://johannes-pirmann.com/post/crypto-who-to-follow/</guid>
-      
-        <description>This is my ever growing list of people to follow in the cryptosphere. I will continue to keep the list up to date and relevant.
-Who to follow on Twitter  Pomp - @APompliano Mr. Anderson - @TrueCrypto28 The Crypto Dog - @TheCryptoDog Josh Rager - @Rager The Wolf Of All Streets - @scottmelker Rekt Capital - @rektcapital Koroush AK - @KoroushAK  Newsletters  The Pomp Letter Crypto Insights by Blockroots  Youtube channels  Anthony Pompliano  </description>
-      
-    </item>
-    
-    <item>
-      <title>Hausbau</title>
-      <link>https://johannes-pirmann.com/post/hausbau/</link>
-      <pubDate>Thu, 01 Jul 2021 13:10:04 +0000</pubDate>
-      
-      <guid>https://johannes-pirmann.com/post/hausbau/</guid>
-      
-        <description>27.05.2021 Erster Termin mit dem Architekten für die Bauvoranfrage.</description>
-      
-    </item>
-    
-    <item>
       <title>What are wallets and why do I need a wallet?</title>
       <link>https://johannes-pirmann.com/post/wallets/</link>
       <pubDate>Tue, 29 Jun 2021 13:25:52 +0000</pubDate>
@@ -172,19 +123,6 @@ Index  Print all S3 buckets  Print all S3 buckets import boto3 s3 = boto3.resour
         <description>This article covers the basic steps which you need to be able to develop with AWS on your local machine.
  Install the AWS CLI Create an AWS IAM user Configure your development environment Install the AWS CDK Install the AWS SDK for Python  Configure your development environment Now run the following command to configure your development environment and insert your corresponding values:
 aws configure Install the AWS SDK for Python pip3 install boto3 </description>
-      
-    </item>
-    
-    <item>
-      <title>AWS Infrastructure with Python</title>
-      <link>https://johannes-pirmann.com/post/aws-infrastructure-with-python/</link>
-      <pubDate>Wed, 16 Jun 2021 14:35:20 +0000</pubDate>
-      
-      <guid>https://johannes-pirmann.com/post/aws-infrastructure-with-python/</guid>
-      
-        <description>Prerequisites Please follow this article to setup your AWS development environment.
-Setting up the directory In the terminal go to the location where you want to put this project and create a new directory with mkdir and switch into the new directory with cd.
-sudo mkdir directory_name cd directory_name Initialize the default CDK app cdk init app --language python Creating a virtual environment for our dependencies If you are using python 3.</description>
       
     </item>
     

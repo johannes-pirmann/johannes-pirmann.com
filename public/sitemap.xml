@@ -3,57 +3,18 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://johannes-pirmann.com/</loc>
-    <lastmod>2021-12-20T06:44:55+00:00</lastmod>
-  </url><url>
-    <loc>https://johannes-pirmann.com/post/are-we-up-for-a-crash/</loc>
-    <lastmod>2021-12-20T06:44:55+00:00</lastmod>
-  </url><url>
-    <loc>https://johannes-pirmann.com/categories/</loc>
-    <lastmod>2021-12-20T06:44:55+00:00</lastmod>
-  </url><url>
-    <loc>https://johannes-pirmann.com/tags/Crypto/</loc>
-    <lastmod>2021-12-20T06:44:55+00:00</lastmod>
-  </url><url>
-    <loc>https://johannes-pirmann.com/categories/Crypto/</loc>
-    <lastmod>2021-12-20T06:44:55+00:00</lastmod>
-  </url><url>
-    <loc>https://johannes-pirmann.com/tags/Economy/</loc>
-    <lastmod>2021-12-20T06:44:55+00:00</lastmod>
-  </url><url>
-    <loc>https://johannes-pirmann.com/categories/Economy/</loc>
-    <lastmod>2021-12-20T06:44:55+00:00</lastmod>
-  </url><url>
-    <loc>https://johannes-pirmann.com/tags/Money/</loc>
-    <lastmod>2021-12-20T06:44:55+00:00</lastmod>
-  </url><url>
-    <loc>https://johannes-pirmann.com/categories/Money/</loc>
-    <lastmod>2021-12-20T06:44:55+00:00</lastmod>
-  </url><url>
-    <loc>https://johannes-pirmann.com/tags/Newsletter/</loc>
-    <lastmod>2021-12-20T06:44:55+00:00</lastmod>
-  </url><url>
-    <loc>https://johannes-pirmann.com/categories/Newsletter/</loc>
-    <lastmod>2021-12-20T06:44:55+00:00</lastmod>
-  </url><url>
-    <loc>https://johannes-pirmann.com/post/</loc>
-    <lastmod>2021-12-20T06:44:55+00:00</lastmod>
-  </url><url>
-    <loc>https://johannes-pirmann.com/tags/Stocks/</loc>
-    <lastmod>2021-12-20T06:44:55+00:00</lastmod>
-  </url><url>
-    <loc>https://johannes-pirmann.com/categories/Stocks/</loc>
-    <lastmod>2021-12-20T06:44:55+00:00</lastmod>
-  </url><url>
-    <loc>https://johannes-pirmann.com/tags/</loc>
-    <lastmod>2021-12-20T06:44:55+00:00</lastmod>
-  </url><url>
-    <loc>https://johannes-pirmann.com/post/whats-trending/</loc>
-    <lastmod>2021-12-15T12:39:27+00:00</lastmod>
+    <lastmod>2021-10-29T18:39:12+00:00</lastmod>
   </url><url>
     <loc>https://johannes-pirmann.com/tags/Ansible/</loc>
     <lastmod>2021-10-29T18:39:12+00:00</lastmod>
   </url><url>
     <loc>https://johannes-pirmann.com/categories/Ansible/</loc>
+    <lastmod>2021-10-29T18:39:12+00:00</lastmod>
+  </url><url>
+    <loc>https://johannes-pirmann.com/categories/</loc>
+    <lastmod>2021-10-29T18:39:12+00:00</lastmod>
+  </url><url>
+    <loc>https://johannes-pirmann.com/post/</loc>
     <lastmod>2021-10-29T18:39:12+00:00</lastmod>
   </url><url>
     <loc>https://johannes-pirmann.com/tags/server/</loc>
@@ -69,6 +30,9 @@
     <lastmod>2021-10-29T18:39:12+00:00</lastmod>
   </url><url>
     <loc>https://johannes-pirmann.com/post/setup-ubuntu-20-04-server-with-ansible/</loc>
+    <lastmod>2021-10-29T18:39:12+00:00</lastmod>
+  </url><url>
+    <loc>https://johannes-pirmann.com/tags/</loc>
     <lastmod>2021-10-29T18:39:12+00:00</lastmod>
   </url><url>
     <loc>https://johannes-pirmann.com/tags/Ubuntu-20.04/</loc>
@@ -143,6 +107,12 @@
     <loc>https://johannes-pirmann.com/categories/Bitcoin/</loc>
     <lastmod>2021-07-09T07:07:12+00:00</lastmod>
   </url><url>
+    <loc>https://johannes-pirmann.com/tags/Crypto/</loc>
+    <lastmod>2021-07-09T07:07:12+00:00</lastmod>
+  </url><url>
+    <loc>https://johannes-pirmann.com/categories/Crypto/</loc>
+    <lastmod>2021-07-09T07:07:12+00:00</lastmod>
+  </url><url>
     <loc>https://johannes-pirmann.com/tags/Cryptocurrency/</loc>
     <lastmod>2021-07-09T07:07:12+00:00</lastmod>
   </url><url>
@@ -161,6 +131,12 @@
     <loc>https://johannes-pirmann.com/categories/Ledger/</loc>
     <lastmod>2021-07-09T07:07:12+00:00</lastmod>
   </url><url>
+    <loc>https://johannes-pirmann.com/tags/Money/</loc>
+    <lastmod>2021-07-09T07:07:12+00:00</lastmod>
+  </url><url>
+    <loc>https://johannes-pirmann.com/categories/Money/</loc>
+    <lastmod>2021-07-09T07:07:12+00:00</lastmod>
+  </url><url>
     <loc>https://johannes-pirmann.com/tags/Nano-X/</loc>
     <lastmod>2021-07-09T07:07:12+00:00</lastmod>
   </url><url>
@@ -175,18 +151,6 @@
   </url><url>
     <loc>https://johannes-pirmann.com/categories/Wallet/</loc>
     <lastmod>2021-07-09T07:07:12+00:00</lastmod>
-  </url><url>
-    <loc>https://johannes-pirmann.com/tags/who-to-follow/</loc>
-    <lastmod>2021-07-02T11:59:09+00:00</lastmod>
-  </url><url>
-    <loc>https://johannes-pirmann.com/categories/who-to-follow/</loc>
-    <lastmod>2021-07-02T11:59:09+00:00</lastmod>
-  </url><url>
-    <loc>https://johannes-pirmann.com/post/crypto-who-to-follow/</loc>
-    <lastmod>2021-07-02T11:59:09+00:00</lastmod>
-  </url><url>
-    <loc>https://johannes-pirmann.com/post/hausbau/</loc>
-    <lastmod>2021-07-01T13:10:04+00:00</lastmod>
   </url><url>
     <loc>https://johannes-pirmann.com/post/wallets/</loc>
     <lastmod>2021-06-29T13:25:52+00:00</lastmod>
@@ -208,15 +172,6 @@
   </url><url>
     <loc>https://johannes-pirmann.com/categories/Getting-Started/</loc>
     <lastmod>2021-06-16T15:34:57+00:00</lastmod>
-  </url><url>
-    <loc>https://johannes-pirmann.com/post/aws-infrastructure-with-python/</loc>
-    <lastmod>2021-06-16T14:35:20+00:00</lastmod>
-  </url><url>
-    <loc>https://johannes-pirmann.com/tags/python/</loc>
-    <lastmod>2021-06-16T14:35:20+00:00</lastmod>
-  </url><url>
-    <loc>https://johannes-pirmann.com/categories/python/</loc>
-    <lastmod>2021-06-16T14:35:20+00:00</lastmod>
   </url><url>
     <loc>https://johannes-pirmann.com/post/raspberry-pi-configuration/</loc>
     <lastmod>2021-06-09T14:30:20+00:00</lastmod>
@@ -246,6 +201,12 @@
     <lastmod>2021-06-01T16:26:57+00:00</lastmod>
   </url><url>
     <loc>https://johannes-pirmann.com/categories/flask/</loc>
+    <lastmod>2021-06-01T16:26:57+00:00</lastmod>
+  </url><url>
+    <loc>https://johannes-pirmann.com/tags/python/</loc>
+    <lastmod>2021-06-01T16:26:57+00:00</lastmod>
+  </url><url>
+    <loc>https://johannes-pirmann.com/categories/python/</loc>
     <lastmod>2021-06-01T16:26:57+00:00</lastmod>
   </url><url>
     <loc>https://johannes-pirmann.com/tags/relay/</loc>
