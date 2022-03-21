@@ -1,0 +1,10 @@
+baseURL = "http://example.org/"
+disablePathToLower = true
+languageCode = "en-us"
+title = "Johannes Pirmann"
+theme = "Anatole"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
