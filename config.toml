@@ -42,6 +42,11 @@ title = "LinkedIn"
 url = "https://www.linkedin.com/in/johannes-pirmann/"
 
 [[params.socialicons]]
+icon = "fab fa-instagram"
+title = "Instagram"
+url = "https://www.instagram.com/johannes_pirmann/"
+
+[[params.socialicons]]
 icon = "fas fa-envelope"
 title = "E-Mail"
 url = "mailto:johannes.pirmann@pirmannmedia.com"
