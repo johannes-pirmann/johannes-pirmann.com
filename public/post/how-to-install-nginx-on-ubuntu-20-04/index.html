@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html
+  dir="ltr"
+  lang="en"
+  data-theme=""
+  class="html"
+><head>
+  <title>
+    
+      Johannes Pirmann
+        |
+        How to install Nginx on Ubuntu 20.04
+
+
+      
+
+
+    
+  </title>
+
+  
+  <meta charset="utf-8" /><meta name="generator" content="Hugo 0.87.0" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="author" content="Johannes Pirmann" />
+  <meta
+    name="description"
+    content="
+      Hi, I&#39;m a software developer and thinkerer.
+
+
+    "
+  />
+  
+  
+    
+    
+    <link
+      rel="stylesheet"
+      href="/scss/main.min.dd48129ac8fa8b31b5a5a0d72c50c389e3b176809b8dbd7ccdc0ef3c325d78f9.css"
+      integrity="sha256-3UgSmsj6izG1paDXLFDDieOxdoCbjb18zcDvPDJdePk="
+      crossorigin="anonymous"
+      type="text/css"
+    />
+
+  
+
+  
+  <link
+    rel="stylesheet"
+    href="/css/markupHighlight.min.31b0a1f317f55c529a460897848c97436bb138b19c399b37de70d463a8bf6ed5.css"
+    integrity="sha256-MbCh8xf1XFKaRgiXhIyXQ2uxOLGcOZs33nDUY6i/btU="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/fontawesome.min.69685904d5c2a0c6258d03c207b778c10466edf6cea928cc0164c376b0ad0930.css"
+    integrity="sha256-aWhZBNXCoMYljQPCB7d4wQRm7fbOqSjMAWTDdrCtCTA="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/solid.min.6d585e78d28cce1200d39fb133c92ed83df01738da721d0f48fb6eac62d24e04.css"
+    integrity="sha256-bVheeNKMzhIA05&#43;xM8ku2D3wFzjach0PSPturGLSTgQ="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/brands.min.6b00d96498d59caa0dbcf9b49d30d821915291f2ceb0e19248523c8607ff43fa.css"
+    integrity="sha256-awDZZJjVnKoNvPm0nTDYIZFSkfLOsOGSSFI8hgf/Q/o="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+
+  <link rel="canonical" href="https://johannes-pirmann.com/post/how-to-install-nginx-on-ubuntu-20-04/" />
+
+  
+  
+  
+  
+  <script
+    type="text/javascript"
+    src="/js/anatole-header.min.46e6a54097480084f8f52c20ca1aa7425b4fad17029a887fd4017b12e311a72d.js"
+    integrity="sha256-RualQJdIAIT49SwgyhqnQltPrRcCmoh/1AF7EuMRpy0="
+    crossorigin="anonymous"
+  ></script>
+
+  
+    
+    
+    <script
+      type="text/javascript"
+      src="/js/anatole-theme-switcher.min.5557c8ff5617a01067ac258fd70b9b992506e379317b0da51e5e0f6e018b408a.js"
+      integrity="sha256-VVfI/1YXoBBnrCWP1wubmSUG43kxew2lHl4PbgGLQIo="
+      crossorigin="anonymous"
+    ></script>
+
+  
+
+  
+
+
+  
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="How to install Nginx on Ubuntu 20.04"/>
+<meta name="twitter:description" content="Introduction In this tutorial I&rsquo;m going to cover how to install Nginx on an Ubuntu 20.04 server. Additionally I&rsquo;m going to setup a simple website and create the configuration within Nginx to make the website available.
+ This article was first published at Hetzner Community: https://community.hetzner.com/tutorials/how-to-install-nginx-on-ubuntu-20-04
+ Prerequisites
+ Setup Ubuntu 20.04 A top-level domain, e.g. example.com  Step 1 - Login to server Login to your server with your non-root user:"/>
+
+
+
+  
+  <meta property="og:title" content="How to install Nginx on Ubuntu 20.04" />
+<meta property="og:description" content="Introduction In this tutorial I&rsquo;m going to cover how to install Nginx on an Ubuntu 20.04 server. Additionally I&rsquo;m going to setup a simple website and create the configuration within Nginx to make the website available.
+ This article was first published at Hetzner Community: https://community.hetzner.com/tutorials/how-to-install-nginx-on-ubuntu-20-04
+ Prerequisites
+ Setup Ubuntu 20.04 A top-level domain, e.g. example.com  Step 1 - Login to server Login to your server with your non-root user:" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://johannes-pirmann.com/post/how-to-install-nginx-on-ubuntu-20-04/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2021-09-29T06:25:21+00:00" />
+<meta property="article:modified_time" content="2021-09-29T06:25:21+00:00" /><meta property="og:site_name" content="Johannes Pirmann" />
+
+
+
+
+  
+  
+  
+  
+  <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "articleSection": "post",
+        "name": "How to install Nginx on Ubuntu 20.04",
+        "headline": "How to install Nginx on Ubuntu 20.04",
+        "alternativeHeadline": "",
+        "description": "
+      
+        Introduction In this tutorial I\u0026rsquo;m going to cover how to install Nginx on an Ubuntu 20.04 server. Additionally I\u0026rsquo;m going to setup a simple website and create the configuration within Nginx to make the website available.\n This article was first published at Hetzner Community: https:\/\/community.hetzner.com\/tutorials\/how-to-install-nginx-on-ubuntu-20-04\n Prerequisites\n Setup Ubuntu 20.04 A top-level domain, e.g. example.com  Step 1 - Login to server Login to your server with your non-root user:
+
+
+      
+
+
+    ",
+        "inLanguage": "en-us",
+        "isFamilyFriendly": "true",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/johannes-pirmann.com\/post\/how-to-install-nginx-on-ubuntu-20-04\/"
+        },
+        "author" : {
+            "@type": "Person",
+            "name": "Johannes Pirmann"
+        },
+        "creator" : {
+            "@type": "Person",
+            "name": "Johannes Pirmann"
+        },
+        "accountablePerson" : {
+            "@type": "Person",
+            "name": "Johannes Pirmann"
+        },
+        "copyrightHolder" : {
+            "@type": "Person",
+            "name": "Johannes Pirmann"
+        },
+        "copyrightYear" : "2021",
+        "dateCreated": "2021-09-29T06:25:21.00Z",
+        "datePublished": "2021-09-29T06:25:21.00Z",
+        "dateModified": "2021-09-29T06:25:21.00Z",
+        "publisher":{
+            "@type":"Organization",
+            "name": "Johannes Pirmann",
+            "url": "https://johannes-pirmann.com/",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https:\/\/johannes-pirmann.com\/favicon-32x32.png",
+                "width":"32",
+                "height":"32"
+            }
+        },
+        "image": 
+      [
+      ]
+
+    ,
+        "url" : "https:\/\/johannes-pirmann.com\/post\/how-to-install-nginx-on-ubuntu-20-04\/",
+        "wordCount" : "942",
+        "genre" : [ 
+      
+      "Nginx"
+
+    
+      
+        ,
+
+      
+      "Ubuntu 20.04"
+
+    
+      
+        ,
+
+      
+      "Server Setup"
+
+    
+      
+        ,
+
+      
+      "Ubuntu"
+
+    
+      
+        ,
+
+      
+      "Security"
+
+    ],
+        "keywords" : [ 
+      
+      "Nginx"
+
+    
+      
+        ,
+
+      
+      "Ubuntu 20.04"
+
+    
+      
+        ,
+
+      
+      "Server Setup"
+
+    
+      
+        ,
+
+      
+      "Ubuntu"
+
+    
+      
+        ,
+
+      
+      "Security"
+
+    ]
+    }
+  </script>
+
+
+
+</head>
+<body
+    
+      class="body theme--light"
+
+    
+  >
+    <div class="wrapper">
+      <aside class="wrapper__sidebar"><div
+  class="sidebar
+    animated fadeInDown
+
+  "
+>
+  <div class="sidebar__content">
+    <div class="sidebar__introduction">
+      <img
+        class="sidebar__introduction-profileimage"
+        src="/images/profile.jpg"
+        alt="profile picture"
+      />
+      <h1 class="sidebar__introduction-title">
+        <a href="/">Johannes Pirmann</a>
+      </h1>
+      <div class="sidebar__introduction-description">
+        <p>Hi, I'm a software developer and thinkerer.</p>
+      </div>
+    </div>
+    <ul class="sidebar__list">
+      
+        <li class="sidebar__list-item">
+          <a href="https://www.linkedin.com/in/johannes-pirmann/" rel="me" aria-label="LinkedIn" title="LinkedIn">
+            <i class="fab fa-linkedin fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+
+      
+        <li class="sidebar__list-item">
+          <a href="https://www.instagram.com/johannes_pirmann/" rel="me" aria-label="Instagram" title="Instagram">
+            <i class="fab fa-instagram fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+
+      
+        <li class="sidebar__list-item">
+          <a href="mailto:johannes.pirmann@pirmannmedia.com" rel="me" aria-label="E-Mail" title="E-Mail">
+            <i class="fas fa-envelope fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+
+      
+    </ul>
+  </div><footer class="footer footer__sidebar">
+  <ul class="footer__list">
+    <li class="footer__item">
+      &copy;
+      
+        Johannes Pirmann
+        2022
+
+
+      
+    </li>
+    
+      <li class="footer__item">
+        <a
+          class="link"
+          href="/imprint"
+          
+          title=""
+        >
+          Imprint
+        </a>
+      </li>
+
+    
+      <li class="footer__item">
+        <a
+          class="link"
+          href="/privacy-policy"
+          
+          title=""
+        >
+          Privacy Policy
+        </a>
+      </li>
+
+    
+  </ul>
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.fae9ac8895995fe91958b3954be11e96025824a04770726a3531e119ddd2d576.js"
+    integrity="sha256-&#43;umsiJWZX&#43;kZWLOVS&#43;EelgJYJKBHcHJqNTHhGd3S1XY="
+    crossorigin="anonymous"
+  ></script></div>
+</aside>
+      <main class="wrapper__main">
+        <header class="header"><div
+  class="
+    animated fadeInDown
+
+  "
+>
+  <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+  </a>
+  <nav class="nav">
+    <ul class="nav__list" id="navMenu">
+      
+      
+        
+        <li class="nav__list-item">
+          <a
+            
+            href="/about"
+            
+            title=""
+            >About</a
+          >
+        </li>
+
+      
+    </ul>
+    <ul class="nav__list nav__list--end">
+      
+      
+        <li class="nav__list-item">
+          <div class="themeswitch">
+            <a title="Switch Theme">
+              <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a>
+          </div>
+        </li>
+
+      
+    </ul>
+  </nav>
+</div>
+</header>
+  <div
+    class="post 
+      animated fadeInDown
+
+    "
+  >
+    
+    <div class="post__content">
+      <h1>How to Install Nginx on Ubuntu 20.04</h1>
+      
+        <ul class="post__meta">
+          <li class="post__meta-item">
+            <em class="fas fa-calendar-day post__meta-icon"></em>
+            <span class="post__meta-text"
+              >
+                Wed, Sep 29, 2021
+
+
+              
+            </span>
+          </li>
+          <li class="post__meta-item">
+            <em class="fas fa-stopwatch post__meta-icon"></em>
+            <span class="post__meta-text">5-minute read</span>
+          </li>
+        </ul>
+
+      <h2 id="introduction">Introduction</h2>
+<p>In this tutorial I&rsquo;m going to cover how to install <strong>Nginx</strong> on an Ubuntu 20.04 server. Additionally I&rsquo;m going to setup a simple website and create the configuration within <strong>Nginx</strong> to make the website available.</p>
+<blockquote>
+<p><em>This article was first published at Hetzner Community:</em> <a href="https://community.hetzner.com/tutorials/how-to-install-nginx-on-ubuntu-20-04">https://community.hetzner.com/tutorials/how-to-install-nginx-on-ubuntu-20-04</a></p>
+</blockquote>
+<p><strong>Prerequisites</strong></p>
+<ul>
+<li><a href="__GHOST_URL__/setup-ubuntu-20-04/">Setup Ubuntu 20.04</a></li>
+<li>A top-level domain, e.g. <strong>example.com</strong></li>
+</ul>
+<h2 id="step-1---login-to-server">Step 1 - Login to server</h2>
+<p>Login to your server with your non-root user:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">ssh holu@10.0.0.1
+</code></pre></div><h3 id="step-11---update-your-server">Step 1.1 - Update your server</h3>
+<p>After a successful login, we need to update our server.</p>
+<p>For this we run the following command:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">holu@10.0.0.1:~$ sudo apt-get update <span style="color:#f92672">&amp;&amp;</span> sudo apt-get upgrade -y
+</code></pre></div><h2 id="step-2---install-nginx">Step 2 - Install Nginx</h2>
+<p>We will install <strong>Nginx</strong> with the help of <strong>apt</strong>.</p>
+<p>For this execute the following command:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">holu@10.0.0.1:~$ sudo apt install nginx
+</code></pre></div><h2 id="step-3---update-the-firewall">Step 3 - Update the firewall</h2>
+<p>In the previous tutorial we set up a firewall, which blocks all connections except the ones from <strong>OpenSSH</strong>. Now, to be able to use <strong>Nginx</strong> we need to allow it within the firewall.</p>
+<h3 id="step-31---list-available-ufw-applications">Step 3.1 - List available ufw applications</h3>
+<p>To know what to activate within <strong>ufw</strong> we will first list all available applications, which we could enable.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">holu@10.0.0.1:~$ sudo ufw app list
+</code></pre></div><p>This will lead to the following output:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">Available applications:
+  Nginx Full
+  Nginx HTTP
+  Nginx HTTPS
+  OpenSSH
+</code></pre></div><ul>
+<li><strong>Nginx HTTP</strong> will only allow <strong>HTTP</strong> traffic and will open for this port <strong>80</strong>.</li>
+<li><strong>Nginx HTTPS</strong> will only allow <strong>HTTPS</strong> traffic and will open for this port <strong>443</strong>.</li>
+<li><strong>Nginx Full</strong> will allow both <strong>HTTP</strong> and <strong>HTTPS</strong> traffic and will open port <strong>80</strong> and <strong>443</strong>.</li>
+</ul>
+<p>You should only allow the most restrictive option for production. As we are still testing things out and haven&rsquo;t setup <strong>SSL</strong> yet, we will choose <strong>Nginx HTTP</strong>.</p>
+<h3 id="step-32---adapt-the-ufw-configuration">Step 3.2 - Adapt the ufw configuration</h3>
+<p>To tell <strong>ufw</strong> that it should allow all <strong>HTTP</strong> traffic we need to run the following command:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">holu@10.0.0.1:~$ sudo ufw allow <span style="color:#e6db74">&#39;Nginx HTTP&#39;</span>
+</code></pre></div><p>Confirm your changes by running the following command:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">holu@10.0.0.1:~$ sudo ufw status
+</code></pre></div><p>It should output the following:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">Status: active
+
+To                         Action      From
+--                         ------      ----
+OpenSSH                    ALLOW       Anywhere
+Nginx HTTP                 ALLOW       Anywhere
+OpenSSH <span style="color:#f92672">(</span>v6<span style="color:#f92672">)</span>               ALLOW       Anywhere <span style="color:#f92672">(</span>v6<span style="color:#f92672">)</span>
+Nginx HTTP <span style="color:#f92672">(</span>v6<span style="color:#f92672">)</span>            ALLOW       Anywhere <span style="color:#f92672">(</span>v6<span style="color:#f92672">)</span>
+</code></pre></div><h2 id="step-4---check-nginx">Step 4 - Check Nginx</h2>
+<p>Now that the firewall allows <strong>HTTP</strong> connections to <strong>Nginx</strong> we can check if everything works correct.</p>
+<p>For this we&rsquo;re going to check the status of <code>**Nginx**</code> with the <code>**systemd**</code> service:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">holu@10.0.0.1:~$ systemctl status nginx
+</code></pre></div><p>And if everything worked out correct, this should be your output:</p>
+<pre><code class="language-sell" data-lang="sell">● nginx.service - A high performance web server and a reverse proxy server
+     Loaded: loaded (/lib/systemd/system/nginx.service; enabled; vendor preset: enabled)
+     Active: active (running) since Sat 2021-08-21 17:54:37 CEST; 21min ago
+       Docs: man:nginx(8)
+   Main PID: 6370 (nginx)
+      Tasks: 2 (limit: 2280)
+     Memory: 4.1M
+     CGroup: /system.slice/nginx.service
+             ├─6370 nginx: master process /usr/sbin/nginx -g daemon on; master_process on;
+             └─6371 nginx: worker process
+</code></pre><p>We can also verify the status by navigating to our <strong>IP</strong> address in the browser:</p>
+<pre><code>http://10.0.0.1
+</code></pre><p>You should be greeted by the following message:</p>
+<figure><img src="__GHOST_URL__/content/images/2021/09/welcome-to-nginx.png"/>
+</figure>
+
+<h2 id="step-5---configure-a-website">Step 5 - Configure a website</h2>
+<p>Now, we are going to configure a test website and point our domain <strong>example.com</strong> to it.</p>
+<h3 id="step-51---create-the-content-directory">Step 5.1 - Create the content directory</h3>
+<p>The content which will be provided by <strong>Nginx</strong> can be found here: <strong>/var/www/</strong>.</p>
+<p>Currently there is only the <strong>html</strong> directory which contains the webpage we just saw.</p>
+<p>For our new website we are going to create a new directory.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">holu@10.0.0.1:~$ sudo mkdir -p /var/www/example.com/html
+</code></pre></div><p>Before continuing we need to verify that our new directory has the right permissions. We do this with the following command:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">holu@10.0.0.1:~$ sudo chown -R $USER:$USER /var/www/example.com/html
+</code></pre></div><h3 id="step-52---create-a-sample-website">Step 5.2 - Create a sample website</h3>
+<p>After creating the directory we are going to create a simple <strong>index.html</strong>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">holu@10.0.0.1:~$ sudo nano /var/www/example.com/html/index.html
+</code></pre></div><p>Insert the following sample content or create your own message!</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#75715e">&lt;!doctype html&gt;</span>
+&lt;<span style="color:#f92672">html</span>&gt;
+  &lt;<span style="color:#f92672">head</span>&gt;
+    &lt;<span style="color:#f92672">title</span>&gt;This is our test website&lt;/<span style="color:#f92672">title</span>&gt;
+  &lt;/<span style="color:#f92672">head</span>&gt;
+  &lt;<span style="color:#f92672">body</span>&gt;
+    &lt;<span style="color:#f92672">p</span>&gt;Hello, holu!&lt;/<span style="color:#f92672">p</span>&gt;
+  &lt;/<span style="color:#f92672">body</span>&gt;
+&lt;/<span style="color:#f92672">html</span>&gt;
+</code></pre></div><h3 id="step-53---configure-nginx-server-block">Step 5.3 - Configure Nginx Server Block</h3>
+<p>Now that we have our website ready we need to create a so called <strong>Server Block</strong> which tells <strong>Nginx</strong> where to point requests for our server to.</p>
+<p>For this we are creating a new file within the <strong>/etc/nginx/sites-available</strong> directory:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">holu@10.0.0.1:~$ sudo nano /etc/nginx/sites-available/example.com
+</code></pre></div><p>Add the following basic configuration and adapt it to your directory and domain:</p>
+<pre><code class="language-config" data-lang="config">server {
+  listen 80;
+
+  server_name example.com;
+
+  root /var/www/example.com/html;
+  index index.html;
+
+  location / {
+    try_files $uri $uri/ =404;
+  }
+}
+</code></pre><blockquote>
+<p>You can find other example configurations <a href="https://www.nginx.com/resources/wiki/start/topics/examples/full/">here</a>.</p>
+</blockquote>
+<h3 id="step-54---activate-the-server-block">Step 5.4 - Activate the Server Block</h3>
+<p>To enable the <strong>Server Block</strong> we need to create a link of the file which points at <strong>/etc/nginx/sites-enabled/</strong>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">holu@10.0.0.1:~$ sudo ln -s /etc/nginx/sites-available/example.com /etc/nginx/sites-enabled/
+</code></pre></div><h3 id="step-55---adjust-the-server_names_hash_bucket_size">Step 5.5 - Adjust the server_names_hash_bucket_size</h3>
+<p>A good explanation for this problem can be found <a href="https://gist.github.com/muhammadghazali/6c2b8c80d5528e3118613746e0041263">here</a>.</p>
+<p>To circumvent it we need to adjust the <strong>nginx.conf</strong>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">holu@10.0.0.1:~$ sudo nano /etc/nginx/nginx.conf
+</code></pre></div><p>Find the following line:</p>
+<pre><code class="language-config" data-lang="config"># server_names_hash_bucket_size 64;
+</code></pre><p>And uncomment it. It should look like this now:</p>
+<pre><code class="language-config" data-lang="config">server_names_hash_bucket_size 64;
+</code></pre><h3 id="step-55---test-nginx-configuration">Step 5.5 - Test Nginx configuration</h3>
+<p>Now, that all necessary changes were made we can test our <strong>Nginx</strong> configuration.</p>
+<p>For this execute the following command:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">holu@10.0.0.1:~$ sudo nginx -t
+</code></pre></div><p>If your output looks as following you did everything right!</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
+nginx: configuration file /etc/nginx/nginx.conf test is successful
+</code></pre></div><h3 id="step-56---reload-nginx">Step 5.6 - Reload Nginx</h3>
+<p>After confirming our setup of <strong>Nginx</strong> we can now reload it and make our changes active.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">holu@10.0.0.1:~$ sudo systemctl restart nginx
+</code></pre></div><p>We can now visit our new website. Browse in your browser to <strong><a href="http://example.com">http://example.com</a></strong> and you should see our simple test website.</p>
+<figure><img src="__GHOST_URL__/content/images/2021/09/welcome-holu.png"/>
+</figure>
+
+<h2 id="conclusion">Conclusion</h2>
+<p>We were able to install <strong>Nginx</strong> and configure it to point to our new website.</p>
+<p>To add an SSL Certificate to your website follow this article: <a href="__GHOST_URL__/add-ssl-certificate-with-lets-encrypt-to-nginx-on-ubuntu-20-04/">Add SSL Certificate with Lets Encrypt to Nginx on Ubuntu 20.04</a></p>
+</div>
+    <div class="post__footer">
+      
+        <span><a class="category" href="/categories/Nginx/">Nginx</a><a class="category" href="/categories/Ubuntu-20%2e04/">Ubuntu 20.04</a><a class="category" href="/categories/Server-Setup/">Server Setup</a><a class="category" href="/categories/Ubuntu/">Ubuntu</a><a class="category" href="/categories/Security/">Security</a></span>
+
+
+
+
+      
+
+      
+        <span><a class="tag" href="/tags/Nginx/">Nginx</a><a class="tag" href="/tags/Ubuntu-20%2e04/">Ubuntu 20.04</a><a class="tag" href="/tags/Server-Setup/">Server Setup</a><a class="tag" href="/tags/Ubuntu/">Ubuntu</a><a class="tag" href="/tags/Security/">Security</a></span>
+
+
+
+
+      
+    </div>
+
+    
+  </div>
+
+
+      </main>
+    </div><footer class="footer footer__base">
+  <ul class="footer__list">
+    <li class="footer__item">
+      &copy;
+      
+        Johannes Pirmann
+        2022
+
+
+      
+    </li>
+    
+      <li class="footer__item">
+        <a
+          class="link"
+          href="/imprint"
+          
+          title=""
+        >
+          Imprint
+        </a>
+      </li>
+
+    
+      <li class="footer__item">
+        <a
+          class="link"
+          href="/privacy-policy"
+          
+          title=""
+        >
+          Privacy Policy
+        </a>
+      </li>
+
+    
+  </ul>
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.fae9ac8895995fe91958b3954be11e96025824a04770726a3531e119ddd2d576.js"
+    integrity="sha256-&#43;umsiJWZX&#43;kZWLOVS&#43;EelgJYJKBHcHJqNTHhGd3S1XY="
+    crossorigin="anonymous"
+  ></script></body>
+</html>

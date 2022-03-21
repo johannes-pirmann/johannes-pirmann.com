@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html
+  dir="ltr"
+  lang="en"
+  data-theme=""
+  class="html"
+><head>
+  <title>
+    
+      Johannes Pirmann
+        |
+        AWS Infrastructure with Python
+
+
+      
+
+
+    
+  </title>
+
+  
+  <meta charset="utf-8" /><meta name="generator" content="Hugo 0.87.0" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="author" content="Johannes Pirmann" />
+  <meta
+    name="description"
+    content="
+      Hi, I&#39;m a software developer and thinkerer.
+
+
+    "
+  />
+  
+  
+    
+    
+    <link
+      rel="stylesheet"
+      href="/scss/main.min.dd48129ac8fa8b31b5a5a0d72c50c389e3b176809b8dbd7ccdc0ef3c325d78f9.css"
+      integrity="sha256-3UgSmsj6izG1paDXLFDDieOxdoCbjb18zcDvPDJdePk="
+      crossorigin="anonymous"
+      type="text/css"
+    />
+
+  
+
+  
+  <link
+    rel="stylesheet"
+    href="/css/markupHighlight.min.31b0a1f317f55c529a460897848c97436bb138b19c399b37de70d463a8bf6ed5.css"
+    integrity="sha256-MbCh8xf1XFKaRgiXhIyXQ2uxOLGcOZs33nDUY6i/btU="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/fontawesome.min.69685904d5c2a0c6258d03c207b778c10466edf6cea928cc0164c376b0ad0930.css"
+    integrity="sha256-aWhZBNXCoMYljQPCB7d4wQRm7fbOqSjMAWTDdrCtCTA="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/solid.min.6d585e78d28cce1200d39fb133c92ed83df01738da721d0f48fb6eac62d24e04.css"
+    integrity="sha256-bVheeNKMzhIA05&#43;xM8ku2D3wFzjach0PSPturGLSTgQ="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/brands.min.6b00d96498d59caa0dbcf9b49d30d821915291f2ceb0e19248523c8607ff43fa.css"
+    integrity="sha256-awDZZJjVnKoNvPm0nTDYIZFSkfLOsOGSSFI8hgf/Q/o="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+
+  <link rel="canonical" href="https://johannes-pirmann.com/post/aws-infrastructure-with-python/" />
+
+  
+  
+  
+  
+  <script
+    type="text/javascript"
+    src="/js/anatole-header.min.46e6a54097480084f8f52c20ca1aa7425b4fad17029a887fd4017b12e311a72d.js"
+    integrity="sha256-RualQJdIAIT49SwgyhqnQltPrRcCmoh/1AF7EuMRpy0="
+    crossorigin="anonymous"
+  ></script>
+
+  
+    
+    
+    <script
+      type="text/javascript"
+      src="/js/anatole-theme-switcher.min.5557c8ff5617a01067ac258fd70b9b992506e379317b0da51e5e0f6e018b408a.js"
+      integrity="sha256-VVfI/1YXoBBnrCWP1wubmSUG43kxew2lHl4PbgGLQIo="
+      crossorigin="anonymous"
+    ></script>
+
+  
+
+  
+
+
+  
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="AWS Infrastructure with Python"/>
+<meta name="twitter:description" content="Prerequisites Please follow this article to setup your AWS development environment.
+Setting up the directory In the terminal go to the location where you want to put this project and create a new directory with mkdir and switch into the new directory with cd.
+sudo mkdir directory_name cd directory_name Initialize the default CDK app cdk init app --language python Creating a virtual environment for our dependencies If you are using python 3."/>
+
+
+
+  
+  <meta property="og:title" content="AWS Infrastructure with Python" />
+<meta property="og:description" content="Prerequisites Please follow this article to setup your AWS development environment.
+Setting up the directory In the terminal go to the location where you want to put this project and create a new directory with mkdir and switch into the new directory with cd.
+sudo mkdir directory_name cd directory_name Initialize the default CDK app cdk init app --language python Creating a virtual environment for our dependencies If you are using python 3." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://johannes-pirmann.com/post/aws-infrastructure-with-python/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2021-06-16T14:35:20+00:00" />
+<meta property="article:modified_time" content="2021-06-16T14:35:20+00:00" /><meta property="og:site_name" content="Johannes Pirmann" />
+
+
+
+
+  
+  
+  
+  
+  <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "articleSection": "post",
+        "name": "AWS Infrastructure with Python",
+        "headline": "AWS Infrastructure with Python",
+        "alternativeHeadline": "",
+        "description": "
+      
+        Prerequisites Please follow this article to setup your AWS development environment.\nSetting up the directory In the terminal go to the location where you want to put this project and create a new directory with mkdir and switch into the new directory with cd.\nsudo mkdir directory_name cd directory_name Initialize the default CDK app cdk init app --language python Creating a virtual environment for our dependencies If you are using python 3.
+
+
+      
+
+
+    ",
+        "inLanguage": "en-us",
+        "isFamilyFriendly": "true",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/johannes-pirmann.com\/post\/aws-infrastructure-with-python\/"
+        },
+        "author" : {
+            "@type": "Person",
+            "name": "Johannes Pirmann"
+        },
+        "creator" : {
+            "@type": "Person",
+            "name": "Johannes Pirmann"
+        },
+        "accountablePerson" : {
+            "@type": "Person",
+            "name": "Johannes Pirmann"
+        },
+        "copyrightHolder" : {
+            "@type": "Person",
+            "name": "Johannes Pirmann"
+        },
+        "copyrightYear" : "2021",
+        "dateCreated": "2021-06-16T14:35:20.00Z",
+        "datePublished": "2021-06-16T14:35:20.00Z",
+        "dateModified": "2021-06-16T14:35:20.00Z",
+        "publisher":{
+            "@type":"Organization",
+            "name": "Johannes Pirmann",
+            "url": "https://johannes-pirmann.com/",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https:\/\/johannes-pirmann.com\/favicon-32x32.png",
+                "width":"32",
+                "height":"32"
+            }
+        },
+        "image": 
+      [
+      ]
+
+    ,
+        "url" : "https:\/\/johannes-pirmann.com\/post\/aws-infrastructure-with-python\/",
+        "wordCount" : "162",
+        "genre" : [ 
+      
+      "aws"
+
+    
+      
+        ,
+
+      
+      "infrastructure"
+
+    
+      
+        ,
+
+      
+      "python"
+
+    ],
+        "keywords" : [ 
+      
+      "aws"
+
+    
+      
+        ,
+
+      
+      "infrastructure"
+
+    
+      
+        ,
+
+      
+      "python"
+
+    ]
+    }
+  </script>
+
+
+
+</head>
+<body
+    
+      class="body theme--light"
+
+    
+  >
+    <div class="wrapper">
+      <aside class="wrapper__sidebar"><div
+  class="sidebar
+    animated fadeInDown
+
+  "
+>
+  <div class="sidebar__content">
+    <div class="sidebar__introduction">
+      <img
+        class="sidebar__introduction-profileimage"
+        src="/images/profile.jpg"
+        alt="profile picture"
+      />
+      <h1 class="sidebar__introduction-title">
+        <a href="/">Johannes Pirmann</a>
+      </h1>
+      <div class="sidebar__introduction-description">
+        <p>Hi, I'm a software developer and thinkerer.</p>
+      </div>
+    </div>
+    <ul class="sidebar__list">
+      
+        <li class="sidebar__list-item">
+          <a href="https://www.linkedin.com/in/johannes-pirmann/" rel="me" aria-label="LinkedIn" title="LinkedIn">
+            <i class="fab fa-linkedin fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+
+      
+        <li class="sidebar__list-item">
+          <a href="https://www.instagram.com/johannes_pirmann/" rel="me" aria-label="Instagram" title="Instagram">
+            <i class="fab fa-instagram fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+
+      
+        <li class="sidebar__list-item">
+          <a href="mailto:johannes.pirmann@pirmannmedia.com" rel="me" aria-label="E-Mail" title="E-Mail">
+            <i class="fas fa-envelope fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+
+      
+    </ul>
+  </div><footer class="footer footer__sidebar">
+  <ul class="footer__list">
+    <li class="footer__item">
+      &copy;
+      
+        Johannes Pirmann
+        2022
+
+
+      
+    </li>
+    
+      <li class="footer__item">
+        <a
+          class="link"
+          href="/imprint"
+          
+          title=""
+        >
+          Imprint
+        </a>
+      </li>
+
+    
+      <li class="footer__item">
+        <a
+          class="link"
+          href="/privacy-policy"
+          
+          title=""
+        >
+          Privacy Policy
+        </a>
+      </li>
+
+    
+  </ul>
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.fae9ac8895995fe91958b3954be11e96025824a04770726a3531e119ddd2d576.js"
+    integrity="sha256-&#43;umsiJWZX&#43;kZWLOVS&#43;EelgJYJKBHcHJqNTHhGd3S1XY="
+    crossorigin="anonymous"
+  ></script></div>
+</aside>
+      <main class="wrapper__main">
+        <header class="header"><div
+  class="
+    animated fadeInDown
+
+  "
+>
+  <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+  </a>
+  <nav class="nav">
+    <ul class="nav__list" id="navMenu">
+      
+      
+        
+        <li class="nav__list-item">
+          <a
+            
+            href="/about"
+            
+            title=""
+            >About</a
+          >
+        </li>
+
+      
+    </ul>
+    <ul class="nav__list nav__list--end">
+      
+      
+        <li class="nav__list-item">
+          <div class="themeswitch">
+            <a title="Switch Theme">
+              <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a>
+          </div>
+        </li>
+
+      
+    </ul>
+  </nav>
+</div>
+</header>
+  <div
+    class="post 
+      animated fadeInDown
+
+    "
+  >
+    
+    <div class="post__content">
+      <h1>AWS Infrastructure With Python</h1>
+      
+        <ul class="post__meta">
+          <li class="post__meta-item">
+            <em class="fas fa-calendar-day post__meta-icon"></em>
+            <span class="post__meta-text"
+              >
+                Wed, Jun 16, 2021
+
+
+              
+            </span>
+          </li>
+          <li class="post__meta-item">
+            <em class="fas fa-stopwatch post__meta-icon"></em>
+            <span class="post__meta-text">One-minute read</span>
+          </li>
+        </ul>
+
+      <h3 id="prerequisites">Prerequisites</h3>
+<p>Please follow <a href="__GHOST_URL__/configure-your-aws-development-environment/">this article</a> to setup your <a href="__GHOST_URL__/configure-your-aws-development-environment/">AWS development environment</a>.</p>
+<h3 id="setting-up-the-directory">Setting up the directory</h3>
+<p>In the terminal go to the location where you want to put this project and create a new directory with mkdir and switch into the new directory with cd.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">sudo mkdir directory_name
+cd directory_name
+</code></pre></div><h3 id="initialize-the-default-cdk-app">Initialize the default CDK app</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">cdk init app --language python
+</code></pre></div><h3 id="creating-a-virtual-environment-for-our-dependencies">Creating a virtual environment for our dependencies</h3>
+<p>If you are using python 3.3 or newer than &lsquo;venv&rsquo; is the prefered way. &lsquo;venv&rsquo; is already included in python.Below python 3.3 you need &lsquo;virtualenv&rsquo;. <a href="https://virtualenv.pypa.io/en/latest/installation.html">Here</a> you can find the <a href="https://virtualenv.pypa.io/en/latest/installation.html">installation guide</a> for virtualenv. I&rsquo;m using python 3.9.5 therefore I will be using &lsquo;venv&rsquo;.</p>
+<p>With &lsquo;venv&rsquo; you create a new virtual environment with the following command:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">python3 -m venv name_of_your_virtual_environment
+</code></pre></div><h3 id="activate-the-virtual-environment-and-install-the-dependencies">Activate the virtual environment and install the dependencies</h3>
+<p>Now you can <strong>activate</strong> the virtual environment and install the dependencies with this command:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">source name_of_your_virtual_environment/bin/activate
+pip3 install -r requirements.txt
+
+</code></pre></div><p>To <strong>deactivate</strong> the virtual environment just type:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">deactivate
+</code></pre></div></div>
+    <div class="post__footer">
+      
+        <span><a class="category" href="/categories/aws/">aws</a><a class="category" href="/categories/infrastructure/">infrastructure</a><a class="category" href="/categories/python/">python</a></span>
+
+
+
+
+      
+
+      
+        <span><a class="tag" href="/tags/aws/">aws</a><a class="tag" href="/tags/infrastructure/">infrastructure</a><a class="tag" href="/tags/python/">python</a></span>
+
+
+
+
+      
+    </div>
+
+    
+  </div>
+
+
+      </main>
+    </div><footer class="footer footer__base">
+  <ul class="footer__list">
+    <li class="footer__item">
+      &copy;
+      
+        Johannes Pirmann
+        2022
+
+
+      
+    </li>
+    
+      <li class="footer__item">
+        <a
+          class="link"
+          href="/imprint"
+          
+          title=""
+        >
+          Imprint
+        </a>
+      </li>
+
+    
+      <li class="footer__item">
+        <a
+          class="link"
+          href="/privacy-policy"
+          
+          title=""
+        >
+          Privacy Policy
+        </a>
+      </li>
+
+    
+  </ul>
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.fae9ac8895995fe91958b3954be11e96025824a04770726a3531e119ddd2d576.js"
+    integrity="sha256-&#43;umsiJWZX&#43;kZWLOVS&#43;EelgJYJKBHcHJqNTHhGd3S1XY="
+    crossorigin="anonymous"
+  ></script></body>
+</html>
