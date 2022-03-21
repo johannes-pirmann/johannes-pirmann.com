@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>infrastructure on </title>
+    <link>https://johannes-pirmann.com/categories/infrastructure/</link>
+    <description>Recent content in infrastructure on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 27 Aug 2021 14:59:31 +0000</lastBuildDate><atom:link href="https://johannes-pirmann.com/categories/infrastructure/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to backup and restore Ghost</title>
+      <link>https://johannes-pirmann.com/post/backup-and-restore-ghost/</link>
+      <pubDate>Fri, 27 Aug 2021 14:59:31 +0000</pubDate>
+      
+      <guid>https://johannes-pirmann.com/post/backup-and-restore-ghost/</guid>
+      
+        <description>In this article I will describe how to create a backup of the Ghost database and directory, back it up and restore it.
+Prerequisites:  Ghost running on a VPS Google Drive, or similar  Creating the Backup Step 1 - Backup the database In this step we will create a copy of the database and the directory.
+Step 1.1 - Create a mysql backup user Within your server login to mysql:</description>
+      
+    </item>
+    
+  </channel>
+</rss>

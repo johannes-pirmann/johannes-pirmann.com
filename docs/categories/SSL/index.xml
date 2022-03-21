@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SSL on </title>
+    <link>https://johannes-pirmann.com/categories/SSL/</link>
+    <description>Recent content in SSL on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 29 Sep 2021 06:24:38 +0000</lastBuildDate><atom:link href="https://johannes-pirmann.com/categories/SSL/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Add SSL Certificate with Lets Encrypt to Nginx on Ubuntu 20.04</title>
+      <link>https://johannes-pirmann.com/post/add-ssl-certificate-with-lets-encrypt-to-nginx-on-ubuntu-20-04/</link>
+      <pubDate>Wed, 29 Sep 2021 06:24:38 +0000</pubDate>
+      
+      <guid>https://johannes-pirmann.com/post/add-ssl-certificate-with-lets-encrypt-to-nginx-on-ubuntu-20-04/</guid>
+      
+        <description>Introduction In this tutorial you will learn how to install certbot which communicates with Let&amp;rsquo;s Encrypt. We will create an SSL certificate for our example.com domain and adapt the Nginx configuration as well as the ufw configuration.
+ This article was first published at Hetzner Community: https://community.hetzner.com/tutorials/add-ssl-certificate-with-lets-encrypt-to-nginx-on-ubuntu-20-04
+ Prerequisites
+ Setup Ubuntu 20.04 Install Nginx on Ubuntu 20.04 A top-level domain, e.g. example.com  Step 1 - Install Certbot First, update your server:</description>
+      
+    </item>
+    
+  </channel>
+</rss>

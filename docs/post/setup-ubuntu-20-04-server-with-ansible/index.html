@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html
+  dir="ltr"
+  lang="en"
+  data-theme=""
+  class="html"
+><head>
+  <title>
+    
+      Johannes Pirmann
+        |
+        Setup Ubuntu 20.04 Server with Ansible
+
+
+      
+
+
+    
+  </title>
+
+  
+  <meta charset="utf-8" /><meta name="generator" content="Hugo 0.87.0" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="author" content="Johannes Pirmann" />
+  <meta
+    name="description"
+    content="
+      Hi, I&#39;m a software developer and thinkerer.
+
+
+    "
+  />
+  
+  
+    
+    
+    <link
+      rel="stylesheet"
+      href="/scss/main.min.dd48129ac8fa8b31b5a5a0d72c50c389e3b176809b8dbd7ccdc0ef3c325d78f9.css"
+      integrity="sha256-3UgSmsj6izG1paDXLFDDieOxdoCbjb18zcDvPDJdePk="
+      crossorigin="anonymous"
+      type="text/css"
+    />
+
+  
+
+  
+  <link
+    rel="stylesheet"
+    href="/css/markupHighlight.min.31b0a1f317f55c529a460897848c97436bb138b19c399b37de70d463a8bf6ed5.css"
+    integrity="sha256-MbCh8xf1XFKaRgiXhIyXQ2uxOLGcOZs33nDUY6i/btU="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/fontawesome.min.69685904d5c2a0c6258d03c207b778c10466edf6cea928cc0164c376b0ad0930.css"
+    integrity="sha256-aWhZBNXCoMYljQPCB7d4wQRm7fbOqSjMAWTDdrCtCTA="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/solid.min.6d585e78d28cce1200d39fb133c92ed83df01738da721d0f48fb6eac62d24e04.css"
+    integrity="sha256-bVheeNKMzhIA05&#43;xM8ku2D3wFzjach0PSPturGLSTgQ="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/brands.min.6b00d96498d59caa0dbcf9b49d30d821915291f2ceb0e19248523c8607ff43fa.css"
+    integrity="sha256-awDZZJjVnKoNvPm0nTDYIZFSkfLOsOGSSFI8hgf/Q/o="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+
+  <link rel="canonical" href="https://johannes-pirmann.com/post/setup-ubuntu-20-04-server-with-ansible/" />
+
+  
+  
+  
+  
+  <script
+    type="text/javascript"
+    src="/js/anatole-header.min.46e6a54097480084f8f52c20ca1aa7425b4fad17029a887fd4017b12e311a72d.js"
+    integrity="sha256-RualQJdIAIT49SwgyhqnQltPrRcCmoh/1AF7EuMRpy0="
+    crossorigin="anonymous"
+  ></script>
+
+  
+    
+    
+    <script
+      type="text/javascript"
+      src="/js/anatole-theme-switcher.min.5557c8ff5617a01067ac258fd70b9b992506e379317b0da51e5e0f6e018b408a.js"
+      integrity="sha256-VVfI/1YXoBBnrCWP1wubmSUG43kxew2lHl4PbgGLQIo="
+      crossorigin="anonymous"
+    ></script>
+
+  
+
+  
+
+
+  
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Setup Ubuntu 20.04 Server with Ansible"/>
+<meta name="twitter:description" content="If you want a more hands on approach you can follow the following tutorial: https://johannes-pirmann.com/setup-ubuntu-20-04/
+Prerequisites  An Ubuntu 20.04 Server with the LAMP-Stack installed. A root user and password A domain The Ansible Playbook: https://github.com/Pirmann-Media/ansible-playbooks/tree/main/ubuntu-20-04-setup  Step 1 - Get the Playbook Go to the GitHub Repository and download the ansible playbook.
+Step 2 - Adapt the provision.yml file Go to the provision.yml file and set your desired username and the corresponding password."/>
+
+
+
+  
+  <meta property="og:title" content="Setup Ubuntu 20.04 Server with Ansible" />
+<meta property="og:description" content="If you want a more hands on approach you can follow the following tutorial: https://johannes-pirmann.com/setup-ubuntu-20-04/
+Prerequisites  An Ubuntu 20.04 Server with the LAMP-Stack installed. A root user and password A domain The Ansible Playbook: https://github.com/Pirmann-Media/ansible-playbooks/tree/main/ubuntu-20-04-setup  Step 1 - Get the Playbook Go to the GitHub Repository and download the ansible playbook.
+Step 2 - Adapt the provision.yml file Go to the provision.yml file and set your desired username and the corresponding password." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://johannes-pirmann.com/post/setup-ubuntu-20-04-server-with-ansible/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2021-10-29T18:39:12+00:00" />
+<meta property="article:modified_time" content="2021-10-29T18:39:12+00:00" /><meta property="og:site_name" content="Johannes Pirmann" />
+
+
+
+
+  
+  
+  
+  
+  <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "articleSection": "post",
+        "name": "Setup Ubuntu 20.04 Server with Ansible",
+        "headline": "Setup Ubuntu 20.04 Server with Ansible",
+        "alternativeHeadline": "",
+        "description": "
+      
+        If you want a more hands on approach you can follow the following tutorial: https:\/\/johannes-pirmann.com\/setup-ubuntu-20-04\/\nPrerequisites  An Ubuntu 20.04 Server with the LAMP-Stack installed. A root user and password A domain The Ansible Playbook: https:\/\/github.com\/Pirmann-Media\/ansible-playbooks\/tree\/main\/ubuntu-20-04-setup  Step 1 - Get the Playbook Go to the GitHub Repository and download the ansible playbook.\nStep 2 - Adapt the provision.yml file Go to the provision.yml file and set your desired username and the corresponding password.
+
+
+      
+
+
+    ",
+        "inLanguage": "en-us",
+        "isFamilyFriendly": "true",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/johannes-pirmann.com\/post\/setup-ubuntu-20-04-server-with-ansible\/"
+        },
+        "author" : {
+            "@type": "Person",
+            "name": "Johannes Pirmann"
+        },
+        "creator" : {
+            "@type": "Person",
+            "name": "Johannes Pirmann"
+        },
+        "accountablePerson" : {
+            "@type": "Person",
+            "name": "Johannes Pirmann"
+        },
+        "copyrightHolder" : {
+            "@type": "Person",
+            "name": "Johannes Pirmann"
+        },
+        "copyrightYear" : "2021",
+        "dateCreated": "2021-10-29T18:39:12.00Z",
+        "datePublished": "2021-10-29T18:39:12.00Z",
+        "dateModified": "2021-10-29T18:39:12.00Z",
+        "publisher":{
+            "@type":"Organization",
+            "name": "Johannes Pirmann",
+            "url": "https://johannes-pirmann.com/",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https:\/\/johannes-pirmann.com\/favicon-32x32.png",
+                "width":"32",
+                "height":"32"
+            }
+        },
+        "image": 
+      [
+      ]
+
+    ,
+        "url" : "https:\/\/johannes-pirmann.com\/post\/setup-ubuntu-20-04-server-with-ansible\/",
+        "wordCount" : "114",
+        "genre" : [ 
+      
+      "Ansible"
+
+    
+      
+        ,
+
+      
+      "Ubuntu 20.04"
+
+    
+      
+        ,
+
+      
+      "server"
+
+    
+      
+        ,
+
+      
+      "Server Setup"
+
+    ],
+        "keywords" : [ 
+      
+      "Ansible"
+
+    
+      
+        ,
+
+      
+      "Ubuntu 20.04"
+
+    
+      
+        ,
+
+      
+      "server"
+
+    
+      
+        ,
+
+      
+      "Server Setup"
+
+    ]
+    }
+  </script>
+
+
+
+</head>
+<body
+    
+      class="body theme--light"
+
+    
+  >
+    <div class="wrapper">
+      <aside class="wrapper__sidebar"><div
+  class="sidebar
+    animated fadeInDown
+
+  "
+>
+  <div class="sidebar__content">
+    <div class="sidebar__introduction">
+      <img
+        class="sidebar__introduction-profileimage"
+        src="/images/profile.jpg"
+        alt="profile picture"
+      />
+      <h1 class="sidebar__introduction-title">
+        <a href="/">Johannes Pirmann</a>
+      </h1>
+      <div class="sidebar__introduction-description">
+        <p>Hi, I'm a software developer and thinkerer.</p>
+      </div>
+    </div>
+    <ul class="sidebar__list">
+      
+        <li class="sidebar__list-item">
+          <a href="https://www.linkedin.com/in/johannes-pirmann/" rel="me" aria-label="LinkedIn" title="LinkedIn">
+            <i class="fab fa-linkedin fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+
+      
+        <li class="sidebar__list-item">
+          <a href="https://www.instagram.com/johannes_pirmann/" rel="me" aria-label="Instagram" title="Instagram">
+            <i class="fab fa-instagram fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+
+      
+        <li class="sidebar__list-item">
+          <a href="mailto:johannes.pirmann@pirmannmedia.com" rel="me" aria-label="E-Mail" title="E-Mail">
+            <i class="fas fa-envelope fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+
+      
+    </ul>
+  </div><footer class="footer footer__sidebar">
+  <ul class="footer__list">
+    <li class="footer__item">
+      &copy;
+      
+        Johannes Pirmann
+        2022
+
+
+      
+    </li>
+    
+      <li class="footer__item">
+        <a
+          class="link"
+          href="/imprint"
+          
+          title=""
+        >
+          Imprint
+        </a>
+      </li>
+
+    
+      <li class="footer__item">
+        <a
+          class="link"
+          href="/privacy-policy"
+          
+          title=""
+        >
+          Privacy Policy
+        </a>
+      </li>
+
+    
+  </ul>
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.fae9ac8895995fe91958b3954be11e96025824a04770726a3531e119ddd2d576.js"
+    integrity="sha256-&#43;umsiJWZX&#43;kZWLOVS&#43;EelgJYJKBHcHJqNTHhGd3S1XY="
+    crossorigin="anonymous"
+  ></script></div>
+</aside>
+      <main class="wrapper__main">
+        <header class="header"><div
+  class="
+    animated fadeInDown
+
+  "
+>
+  <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+  </a>
+  <nav class="nav">
+    <ul class="nav__list" id="navMenu">
+      
+      
+        
+        <li class="nav__list-item">
+          <a
+            
+            href="/about"
+            
+            title=""
+            >About</a
+          >
+        </li>
+
+      
+    </ul>
+    <ul class="nav__list nav__list--end">
+      
+      
+        <li class="nav__list-item">
+          <div class="themeswitch">
+            <a title="Switch Theme">
+              <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a>
+          </div>
+        </li>
+
+      
+    </ul>
+  </nav>
+</div>
+</header>
+  <div
+    class="post 
+      animated fadeInDown
+
+    "
+  >
+    
+    <div class="post__content">
+      <h1>Setup Ubuntu 20.04 Server With Ansible</h1>
+      
+        <ul class="post__meta">
+          <li class="post__meta-item">
+            <em class="fas fa-calendar-day post__meta-icon"></em>
+            <span class="post__meta-text"
+              >
+                Fri, Oct 29, 2021
+
+
+              
+            </span>
+          </li>
+          <li class="post__meta-item">
+            <em class="fas fa-stopwatch post__meta-icon"></em>
+            <span class="post__meta-text">One-minute read</span>
+          </li>
+        </ul>
+
+      <p>If you want a more hands on approach you can follow the following tutorial: <a href="__GHOST_URL__/setup-ubuntu-20-04/">https://johannes-pirmann.com/setup-ubuntu-20-04/</a></p>
+<h2 id="prerequisites">Prerequisites</h2>
+<ul>
+<li>An Ubuntu 20.04 Server with the LAMP-Stack installed.</li>
+<li>A root user and password</li>
+<li>A domain</li>
+<li>The Ansible Playbook: <a href="https://github.com/Pirmann-Media/ansible-playbooks/tree/main/ubuntu-20-04-setup">https://github.com/Pirmann-Media/ansible-playbooks/tree/main/ubuntu-20-04-setup</a></li>
+</ul>
+<h2 id="step-1---get-the-playbook">Step 1 - Get the Playbook</h2>
+<p>Go to the <a href="https://github.com/Pirmann-Media/ansible-playbooks/tree/main/ubuntu-20-04-setup">GitHub Repository</a> and download the ansible playbook.</p>
+<h2 id="step-2---adapt-the-provisionyml-file">Step 2 - Adapt the provision.yml file</h2>
+<p>Go to the provision.yml file and set your desired username and the corresponding password. Additionally, specify the path to your public SSH key and the host which should be used.</p>
+<h2 id="step-3---execute-the-playbook">Step 3 - Execute the playbook</h2>
+<p>To execute the ansible playbook run the following command:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">ansible-playbook provision.yml --ask-pass
+</code></pre></div><p>Now you need to enter the root password.</p>
+</div>
+    <div class="post__footer">
+      
+        <span><a class="category" href="/categories/Ansible/">Ansible</a><a class="category" href="/categories/Ubuntu-20%2e04/">Ubuntu 20.04</a><a class="category" href="/categories/server/">server</a><a class="category" href="/categories/Server-Setup/">Server Setup</a></span>
+
+
+
+
+      
+
+      
+        <span><a class="tag" href="/tags/Ansible/">Ansible</a><a class="tag" href="/tags/Ubuntu-20%2e04/">Ubuntu 20.04</a><a class="tag" href="/tags/server/">server</a><a class="tag" href="/tags/Server-Setup/">Server Setup</a></span>
+
+
+
+
+      
+    </div>
+
+    
+  </div>
+
+
+      </main>
+    </div><footer class="footer footer__base">
+  <ul class="footer__list">
+    <li class="footer__item">
+      &copy;
+      
+        Johannes Pirmann
+        2022
+
+
+      
+    </li>
+    
+      <li class="footer__item">
+        <a
+          class="link"
+          href="/imprint"
+          
+          title=""
+        >
+          Imprint
+        </a>
+      </li>
+
+    
+      <li class="footer__item">
+        <a
+          class="link"
+          href="/privacy-policy"
+          
+          title=""
+        >
+          Privacy Policy
+        </a>
+      </li>
+
+    
+  </ul>
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.fae9ac8895995fe91958b3954be11e96025824a04770726a3531e119ddd2d576.js"
+    integrity="sha256-&#43;umsiJWZX&#43;kZWLOVS&#43;EelgJYJKBHcHJqNTHhGd3S1XY="
+    crossorigin="anonymous"
+  ></script></body>
+</html>

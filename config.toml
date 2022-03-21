@@ -1,6 +1,7 @@
 baseURL = "https://johannes-pirmann.com/"
 disablePathToLower = true
 languageCode = "en-us"
+publishDir = "docs"
 
 theme = "Anatole"
 

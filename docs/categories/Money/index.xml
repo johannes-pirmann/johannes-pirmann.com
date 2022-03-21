@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Money on </title>
+    <link>https://johannes-pirmann.com/categories/Money/</link>
+    <description>Recent content in Money on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 09 Jul 2021 07:07:12 +0000</lastBuildDate><atom:link href="https://johannes-pirmann.com/categories/Money/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Unboxing &amp; Setup of the Ledger Nano X</title>
+      <link>https://johannes-pirmann.com/post/unboxing-of-the-ledger-nano-x/</link>
+      <pubDate>Fri, 09 Jul 2021 07:07:12 +0000</pubDate>
+      
+      <guid>https://johannes-pirmann.com/post/unboxing-of-the-ledger-nano-x/</guid>
+      
+        <description>If you don&amp;rsquo;t have one yet, you can get it here: Ledger Nano X*
+What is the Ledger Nano X? As I explained in the article about wallets the Nano X is a cold wallet on which you can securely store your cryptocurrencies.
+The Nano X is more convenient to use than the Nano S on the go as it has bluetooth capabilities. It has also a bigger capacity than the Nano S.</description>
+      
+    </item>
+    
+    <item>
+      <title>What are wallets and why do I need a wallet?</title>
+      <link>https://johannes-pirmann.com/post/wallets/</link>
+      <pubDate>Tue, 29 Jun 2021 13:25:52 +0000</pubDate>
+      
+      <guid>https://johannes-pirmann.com/post/wallets/</guid>
+      
+        <description>What are wallets and why do I need a wallet? Wallets allow you to keep track of your cryptocurrency holdings. The most important features of those wallets are the public and the private key.
+The public key is an identifier for your wallet. It works similar as an username on a social network. With the pubic key someone can send you money.
+The private key on the other hand is like your pin for your bank account.</description>
+      
+    </item>
+    
+  </channel>
+</rss>

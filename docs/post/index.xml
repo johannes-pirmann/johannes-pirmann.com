@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on </title>
+    <link>https://johannes-pirmann.com/post/</link>
+    <description>Recent content in Posts on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 29 Oct 2021 18:39:12 +0000</lastBuildDate><atom:link href="https://johannes-pirmann.com/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Setup Ubuntu 20.04 Server with Ansible</title>
+      <link>https://johannes-pirmann.com/post/setup-ubuntu-20-04-server-with-ansible/</link>
+      <pubDate>Fri, 29 Oct 2021 18:39:12 +0000</pubDate>
+      
+      <guid>https://johannes-pirmann.com/post/setup-ubuntu-20-04-server-with-ansible/</guid>
+      
+        <description>If you want a more hands on approach you can follow the following tutorial: https://johannes-pirmann.com/setup-ubuntu-20-04/
+Prerequisites  An Ubuntu 20.04 Server with the LAMP-Stack installed. A root user and password A domain The Ansible Playbook: https://github.com/Pirmann-Media/ansible-playbooks/tree/main/ubuntu-20-04-setup  Step 1 - Get the Playbook Go to the GitHub Repository and download the ansible playbook.
+Step 2 - Adapt the provision.yml file Go to the provision.yml file and set your desired username and the corresponding password.</description>
+      
+    </item>
+    
+    <item>
+      <title>How to install Nginx on Ubuntu 20.04</title>
+      <link>https://johannes-pirmann.com/post/how-to-install-nginx-on-ubuntu-20-04/</link>
+      <pubDate>Wed, 29 Sep 2021 06:25:21 +0000</pubDate>
+      
+      <guid>https://johannes-pirmann.com/post/how-to-install-nginx-on-ubuntu-20-04/</guid>
+      
+        <description>Introduction In this tutorial I&amp;rsquo;m going to cover how to install Nginx on an Ubuntu 20.04 server. Additionally I&amp;rsquo;m going to setup a simple website and create the configuration within Nginx to make the website available.
+ This article was first published at Hetzner Community: https://community.hetzner.com/tutorials/how-to-install-nginx-on-ubuntu-20-04
+ Prerequisites
+ Setup Ubuntu 20.04 A top-level domain, e.g. example.com  Step 1 - Login to server Login to your server with your non-root user:</description>
+      
+    </item>
+    
+    <item>
+      <title>Add SSL Certificate with Lets Encrypt to Nginx on Ubuntu 20.04</title>
+      <link>https://johannes-pirmann.com/post/add-ssl-certificate-with-lets-encrypt-to-nginx-on-ubuntu-20-04/</link>
+      <pubDate>Wed, 29 Sep 2021 06:24:38 +0000</pubDate>
+      
+      <guid>https://johannes-pirmann.com/post/add-ssl-certificate-with-lets-encrypt-to-nginx-on-ubuntu-20-04/</guid>
+      
+        <description>Introduction In this tutorial you will learn how to install certbot which communicates with Let&amp;rsquo;s Encrypt. We will create an SSL certificate for our example.com domain and adapt the Nginx configuration as well as the ufw configuration.
+ This article was first published at Hetzner Community: https://community.hetzner.com/tutorials/add-ssl-certificate-with-lets-encrypt-to-nginx-on-ubuntu-20-04
+ Prerequisites
+ Setup Ubuntu 20.04 Install Nginx on Ubuntu 20.04 A top-level domain, e.g. example.com  Step 1 - Install Certbot First, update your server:</description>
+      
+    </item>
+    
+    <item>
+      <title>Setup Ubuntu 20.04</title>
+      <link>https://johannes-pirmann.com/post/setup-ubuntu-20-04/</link>
+      <pubDate>Mon, 27 Sep 2021 16:29:46 +0000</pubDate>
+      
+      <guid>https://johannes-pirmann.com/post/setup-ubuntu-20-04/</guid>
+      
+        <description>Introduction In this tutorial you will learn how to setup an Ubuntu server. This includes how to create a non-root user, enable SSH login, disable root login and enable a rudimentary firewall.
+ This article was first published at Hetzner Community: https://community.hetzner.com/tutorials/setup-ubuntu-20-04
+ Step 1 - Login to your new serverLogin as the root user to your new Ubuntu 20.04 server: ssh root@10.0.0.1  If you already set up your server with an SSH key and it isn&amp;rsquo;t your default key you need to tell your machine where to find it:</description>
+      
+    </item>
+    
+    <item>
+      <title>How to backup and restore Ghost</title>
+      <link>https://johannes-pirmann.com/post/backup-and-restore-ghost/</link>
+      <pubDate>Fri, 27 Aug 2021 14:59:31 +0000</pubDate>
+      
+      <guid>https://johannes-pirmann.com/post/backup-and-restore-ghost/</guid>
+      
+        <description>In this article I will describe how to create a backup of the Ghost database and directory, back it up and restore it.
+Prerequisites:  Ghost running on a VPS Google Drive, or similar  Creating the Backup Step 1 - Backup the database In this step we will create a copy of the database and the directory.
+Step 1.1 - Create a mysql backup user Within your server login to mysql:</description>
+      
+    </item>
+    
+    <item>
+      <title>Unboxing &amp; Setup of the Ledger Nano X</title>
+      <link>https://johannes-pirmann.com/post/unboxing-of-the-ledger-nano-x/</link>
+      <pubDate>Fri, 09 Jul 2021 07:07:12 +0000</pubDate>
+      
+      <guid>https://johannes-pirmann.com/post/unboxing-of-the-ledger-nano-x/</guid>
+      
+        <description>If you don&amp;rsquo;t have one yet, you can get it here: Ledger Nano X*
+What is the Ledger Nano X? As I explained in the article about wallets the Nano X is a cold wallet on which you can securely store your cryptocurrencies.
+The Nano X is more convenient to use than the Nano S on the go as it has bluetooth capabilities. It has also a bigger capacity than the Nano S.</description>
+      
+    </item>
+    
+    <item>
+      <title>What are wallets and why do I need a wallet?</title>
+      <link>https://johannes-pirmann.com/post/wallets/</link>
+      <pubDate>Tue, 29 Jun 2021 13:25:52 +0000</pubDate>
+      
+      <guid>https://johannes-pirmann.com/post/wallets/</guid>
+      
+        <description>What are wallets and why do I need a wallet? Wallets allow you to keep track of your cryptocurrency holdings. The most important features of those wallets are the public and the private key.
+The public key is an identifier for your wallet. It works similar as an username on a social network. With the pubic key someone can send you money.
+The private key on the other hand is like your pin for your bank account.</description>
+      
+    </item>
+    
+    <item>
+      <title>AWS Scripts</title>
+      <link>https://johannes-pirmann.com/post/aws-scripts/</link>
+      <pubDate>Wed, 16 Jun 2021 16:39:48 +0000</pubDate>
+      
+      <guid>https://johannes-pirmann.com/post/aws-scripts/</guid>
+      
+        <description>In this article I list all code snippets I find/create regarding AWS. Most of those snippets work with the AWS SDK for python &amp;lsquo;boto3&amp;rsquo;.
+Prerequisites Please follow this article to setup your AWS development environment.
+Index  Print all S3 buckets  Print all S3 buckets import boto3 s3 = boto3.resource(&amp;#39;s3&amp;#39;) for bucket </description>
+      
+    </item>
+    
+    <item>
+      <title>Configure your AWS development environment</title>
+      <link>https://johannes-pirmann.com/post/configure-your-aws-development-environment/</link>
+      <pubDate>Wed, 16 Jun 2021 15:34:57 +0000</pubDate>
+      
+      <guid>https://johannes-pirmann.com/post/configure-your-aws-development-environment/</guid>
+      
+        <description>This article covers the basic steps which you need to be able to develop with AWS on your local machine.
+ Install the AWS CLI Create an AWS IAM user Configure your development environment Install the AWS CDK Install the AWS SDK for Python  Configure your development environment Now run the following command to configure your development environment and insert your corresponding values:
+aws configure Install the AWS SDK for Python pip3 install boto3 </description>
+      
+    </item>
+    
+    <item>
+      <title>Basic Raspberry Pi Configuration for Headless Mode</title>
+      <link>https://johannes-pirmann.com/post/raspberry-pi-configuration/</link>
+      <pubDate>Wed, 09 Jun 2021 14:30:20 +0000</pubDate>
+      
+      <guid>https://johannes-pirmann.com/post/raspberry-pi-configuration/</guid>
+      
+        <description>Enable SSH Add an file to the boot partition called &amp;ldquo;ssh&amp;rdquo;. This enables you to connect to the pi via ssh.
+Enable WiFi To enable wifi on the raspberry pi add a file named &amp;ldquo;wpa_supplicant.conf&amp;rdquo; to the boot partition. Add following content to this file and adapt it to your needs.
+ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev country=&amp;lt;Insert 2 letter ISO 3166-1 country code here&amp;gt; update_config=1 network={ ssid=&amp;#34;&amp;lt;Name of your wireless LAN&amp;gt;&amp;#34; psk=&amp;#34;&amp;lt;Password for your wireless LAN&amp;gt;&amp;#34; } </description>
+      
+    </item>
+    
+    <item>
+      <title>Control a Relay with a Raspberry Pi and Python</title>
+      <link>https://johannes-pirmann.com/post/control-a-relay/</link>
+      <pubDate>Tue, 01 Jun 2021 16:26:57 +0000</pubDate>
+      
+      <guid>https://johannes-pirmann.com/post/control-a-relay/</guid>
+      
+        <description>With this project I wanted to control a motor over the internet. The motor needs 12-24V DC with 1500mA. It is started through an impulse with the same potential as the power supply.
+I chose a Raspberry Pi model B for this project, as I had one laying around. As OS I used Raspberry Pi OS Lite on a 8GB SD Card. To control the motor I created a simple Flask API.</description>
+      
+    </item>
+    
+    <item>
+      <title>Work/Projects</title>
+      <link>https://johannes-pirmann.com/post/work/</link>
+      <pubDate>Wed, 26 May 2021 12:43:37 +0000</pubDate>
+      
+      <guid>https://johannes-pirmann.com/post/work/</guid>
+      
+        <description>Work  Pirmann Media (Consulting/Freelancing)  Side Projects  Cars  [GER] BMW E30 316i  </description>
+      
+    </item>
+    
+    <item>
+      <title>E30 316i</title>
+      <link>https://johannes-pirmann.com/post/e30-316i/</link>
+      <pubDate>Mon, 10 May 2021 12:13:58 +0000</pubDate>
+      
+      <guid>https://johannes-pirmann.com/post/e30-316i/</guid>
+      
+        <description>Tag 6 - Ausbau Kühlergrill &amp;amp; Lampen                Tag 5 - Ausbau Kühler             Die Kühlflüssigkeit war auch nicht mehr wirklich vorhanden&amp;hellip;
+Tag 4 - Ausbau Luftfilterkasten &amp;amp; Batterie           Ausbau Luftfilterkasten  Der Luftfilter hatte auch schon bessere Tage gesehen.</description>
+      
+    </item>
+    
+    <item>
+      <title>Brag Document</title>
+      <link>https://johannes-pirmann.com/post/brag-dokument/</link>
+      <pubDate>Thu, 08 Apr 2021 14:41:53 +0000</pubDate>
+      
+      <guid>https://johannes-pirmann.com/post/brag-dokument/</guid>
+      
+        <description>What is a brag document? A brag document is a list of stuff you did at or besides work. It is great for showing what you did to your manager when it comes to raises. Additionally, it helps you to reflect on what you worked on. I find it useful to see how far you have come and what you have accomplished.
+How often should I update it? Update it regularly, like weekly or biweekly so you don&amp;rsquo;t forget anything.</description>
+      
+    </item>
+    
+  </channel>
+</rss>

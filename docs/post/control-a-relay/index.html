@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html
+  dir="ltr"
+  lang="en"
+  data-theme=""
+  class="html"
+><head>
+  <title>
+    
+      Johannes Pirmann
+        |
+        Control a Relay with a Raspberry Pi and Python
+
+
+      
+
+
+    
+  </title>
+
+  
+  <meta charset="utf-8" /><meta name="generator" content="Hugo 0.87.0" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="author" content="Johannes Pirmann" />
+  <meta
+    name="description"
+    content="
+      Hi, I&#39;m a software developer and thinkerer.
+
+
+    "
+  />
+  
+  
+    
+    
+    <link
+      rel="stylesheet"
+      href="/scss/main.min.dd48129ac8fa8b31b5a5a0d72c50c389e3b176809b8dbd7ccdc0ef3c325d78f9.css"
+      integrity="sha256-3UgSmsj6izG1paDXLFDDieOxdoCbjb18zcDvPDJdePk="
+      crossorigin="anonymous"
+      type="text/css"
+    />
+
+  
+
+  
+  <link
+    rel="stylesheet"
+    href="/css/markupHighlight.min.31b0a1f317f55c529a460897848c97436bb138b19c399b37de70d463a8bf6ed5.css"
+    integrity="sha256-MbCh8xf1XFKaRgiXhIyXQ2uxOLGcOZs33nDUY6i/btU="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/fontawesome.min.69685904d5c2a0c6258d03c207b778c10466edf6cea928cc0164c376b0ad0930.css"
+    integrity="sha256-aWhZBNXCoMYljQPCB7d4wQRm7fbOqSjMAWTDdrCtCTA="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/solid.min.6d585e78d28cce1200d39fb133c92ed83df01738da721d0f48fb6eac62d24e04.css"
+    integrity="sha256-bVheeNKMzhIA05&#43;xM8ku2D3wFzjach0PSPturGLSTgQ="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/brands.min.6b00d96498d59caa0dbcf9b49d30d821915291f2ceb0e19248523c8607ff43fa.css"
+    integrity="sha256-awDZZJjVnKoNvPm0nTDYIZFSkfLOsOGSSFI8hgf/Q/o="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+
+  <link rel="canonical" href="https://johannes-pirmann.com/post/control-a-relay/" />
+
+  
+  
+  
+  
+  <script
+    type="text/javascript"
+    src="/js/anatole-header.min.46e6a54097480084f8f52c20ca1aa7425b4fad17029a887fd4017b12e311a72d.js"
+    integrity="sha256-RualQJdIAIT49SwgyhqnQltPrRcCmoh/1AF7EuMRpy0="
+    crossorigin="anonymous"
+  ></script>
+
+  
+    
+    
+    <script
+      type="text/javascript"
+      src="/js/anatole-theme-switcher.min.5557c8ff5617a01067ac258fd70b9b992506e379317b0da51e5e0f6e018b408a.js"
+      integrity="sha256-VVfI/1YXoBBnrCWP1wubmSUG43kxew2lHl4PbgGLQIo="
+      crossorigin="anonymous"
+    ></script>
+
+  
+
+  
+
+
+  
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Control a Relay with a Raspberry Pi and Python"/>
+<meta name="twitter:description" content="With this project I wanted to control a motor over the internet. The motor needs 12-24V DC with 1500mA. It is started through an impulse with the same potential as the power supply.
+I chose a Raspberry Pi model B for this project, as I had one laying around. As OS I used Raspberry Pi OS Lite on a 8GB SD Card. To control the motor I created a simple Flask API."/>
+
+
+
+  
+  <meta property="og:title" content="Control a Relay with a Raspberry Pi and Python" />
+<meta property="og:description" content="With this project I wanted to control a motor over the internet. The motor needs 12-24V DC with 1500mA. It is started through an impulse with the same potential as the power supply.
+I chose a Raspberry Pi model B for this project, as I had one laying around. As OS I used Raspberry Pi OS Lite on a 8GB SD Card. To control the motor I created a simple Flask API." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://johannes-pirmann.com/post/control-a-relay/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2021-06-01T16:26:57+00:00" />
+<meta property="article:modified_time" content="2021-06-01T16:26:57+00:00" /><meta property="og:site_name" content="Johannes Pirmann" />
+
+
+
+
+  
+  
+  
+  
+  <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "articleSection": "post",
+        "name": "Control a Relay with a Raspberry Pi and Python",
+        "headline": "Control a Relay with a Raspberry Pi and Python",
+        "alternativeHeadline": "",
+        "description": "
+      
+        With this project I wanted to control a motor over the internet. The motor needs 12-24V DC with 1500mA. It is started through an impulse with the same potential as the power supply.\nI chose a Raspberry Pi model B for this project, as I had one laying around. As OS I used Raspberry Pi OS Lite on a 8GB SD Card. To control the motor I created a simple Flask API.
+
+
+      
+
+
+    ",
+        "inLanguage": "en-us",
+        "isFamilyFriendly": "true",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/johannes-pirmann.com\/post\/control-a-relay\/"
+        },
+        "author" : {
+            "@type": "Person",
+            "name": "Johannes Pirmann"
+        },
+        "creator" : {
+            "@type": "Person",
+            "name": "Johannes Pirmann"
+        },
+        "accountablePerson" : {
+            "@type": "Person",
+            "name": "Johannes Pirmann"
+        },
+        "copyrightHolder" : {
+            "@type": "Person",
+            "name": "Johannes Pirmann"
+        },
+        "copyrightYear" : "2021",
+        "dateCreated": "2021-06-01T16:26:57.00Z",
+        "datePublished": "2021-06-01T16:26:57.00Z",
+        "dateModified": "2021-06-01T16:26:57.00Z",
+        "publisher":{
+            "@type":"Organization",
+            "name": "Johannes Pirmann",
+            "url": "https://johannes-pirmann.com/",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https:\/\/johannes-pirmann.com\/favicon-32x32.png",
+                "width":"32",
+                "height":"32"
+            }
+        },
+        "image": 
+      [
+      ]
+
+    ,
+        "url" : "https:\/\/johannes-pirmann.com\/post\/control-a-relay\/",
+        "wordCount" : "234",
+        "genre" : [ 
+      
+      "raspberry-pi"
+
+    
+      
+        ,
+
+      
+      "relay"
+
+    
+      
+        ,
+
+      
+      "api"
+
+    
+      
+        ,
+
+      
+      "electronics"
+
+    
+      
+        ,
+
+      
+      "python"
+
+    
+      
+        ,
+
+      
+      "flask"
+
+    ],
+        "keywords" : [ 
+      
+      "raspberry-pi"
+
+    
+      
+        ,
+
+      
+      "relay"
+
+    
+      
+        ,
+
+      
+      "api"
+
+    
+      
+        ,
+
+      
+      "electronics"
+
+    
+      
+        ,
+
+      
+      "python"
+
+    
+      
+        ,
+
+      
+      "flask"
+
+    ]
+    }
+  </script>
+
+
+
+</head>
+<body
+    
+      class="body theme--light"
+
+    
+  >
+    <div class="wrapper">
+      <aside class="wrapper__sidebar"><div
+  class="sidebar
+    animated fadeInDown
+
+  "
+>
+  <div class="sidebar__content">
+    <div class="sidebar__introduction">
+      <img
+        class="sidebar__introduction-profileimage"
+        src="/images/profile.jpg"
+        alt="profile picture"
+      />
+      <h1 class="sidebar__introduction-title">
+        <a href="/">Johannes Pirmann</a>
+      </h1>
+      <div class="sidebar__introduction-description">
+        <p>Hi, I'm a software developer and thinkerer.</p>
+      </div>
+    </div>
+    <ul class="sidebar__list">
+      
+        <li class="sidebar__list-item">
+          <a href="https://www.linkedin.com/in/johannes-pirmann/" rel="me" aria-label="LinkedIn" title="LinkedIn">
+            <i class="fab fa-linkedin fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+
+      
+        <li class="sidebar__list-item">
+          <a href="https://www.instagram.com/johannes_pirmann/" rel="me" aria-label="Instagram" title="Instagram">
+            <i class="fab fa-instagram fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+
+      
+        <li class="sidebar__list-item">
+          <a href="mailto:johannes.pirmann@pirmannmedia.com" rel="me" aria-label="E-Mail" title="E-Mail">
+            <i class="fas fa-envelope fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+
+      
+    </ul>
+  </div><footer class="footer footer__sidebar">
+  <ul class="footer__list">
+    <li class="footer__item">
+      &copy;
+      
+        Johannes Pirmann
+        2022
+
+
+      
+    </li>
+    
+      <li class="footer__item">
+        <a
+          class="link"
+          href="/imprint"
+          
+          title=""
+        >
+          Imprint
+        </a>
+      </li>
+
+    
+      <li class="footer__item">
+        <a
+          class="link"
+          href="/privacy-policy"
+          
+          title=""
+        >
+          Privacy Policy
+        </a>
+      </li>
+
+    
+  </ul>
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.fae9ac8895995fe91958b3954be11e96025824a04770726a3531e119ddd2d576.js"
+    integrity="sha256-&#43;umsiJWZX&#43;kZWLOVS&#43;EelgJYJKBHcHJqNTHhGd3S1XY="
+    crossorigin="anonymous"
+  ></script></div>
+</aside>
+      <main class="wrapper__main">
+        <header class="header"><div
+  class="
+    animated fadeInDown
+
+  "
+>
+  <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+  </a>
+  <nav class="nav">
+    <ul class="nav__list" id="navMenu">
+      
+      
+        
+        <li class="nav__list-item">
+          <a
+            
+            href="/about"
+            
+            title=""
+            >About</a
+          >
+        </li>
+
+      
+    </ul>
+    <ul class="nav__list nav__list--end">
+      
+      
+        <li class="nav__list-item">
+          <div class="themeswitch">
+            <a title="Switch Theme">
+              <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a>
+          </div>
+        </li>
+
+      
+    </ul>
+  </nav>
+</div>
+</header>
+  <div
+    class="post 
+      animated fadeInDown
+
+    "
+  >
+    
+    <div class="post__content">
+      <h1>Control a Relay With a Raspberry Pi and Python</h1>
+      
+        <ul class="post__meta">
+          <li class="post__meta-item">
+            <em class="fas fa-calendar-day post__meta-icon"></em>
+            <span class="post__meta-text"
+              >
+                Tue, Jun 1, 2021
+
+
+              
+            </span>
+          </li>
+          <li class="post__meta-item">
+            <em class="fas fa-stopwatch post__meta-icon"></em>
+            <span class="post__meta-text">2-minute read</span>
+          </li>
+        </ul>
+
+      <p>With this project I wanted to control a motor over the internet. The motor needs 12-24V DC with 1500mA. It is started through an impulse with the same potential as the power supply.</p>
+<p>I chose a Raspberry Pi model B for this project, as I had one laying around. As OS I used Raspberry Pi OS Lite on a 8GB SD Card. To control the motor I created a simple Flask API.</p>
+<h2 id="hardware">Hardware</h2>
+<ul>
+<li>Raspberry Pi Model B</li>
+<li><a href="https://www.amazon.de/SanDisk-SDSDB-8192-BULK-Secure-Digital-Speicherkarte/dp/B000UZL0YU/ref=sr_1_3?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&amp;crid=34QMCF02EMGAH&amp;dchild=1&amp;keywords=sandisk+8gb+sd+karte&amp;qid=1622633571&amp;sprefix=san+disk+8gb+s%2Caps%2C156&amp;sr=8-3">8GB SD Card</a></li>
+<li><a href="https://www.az-delivery.de/products/relais-modul?variant=8138392109152">5V Relay</a></li>
+<li>ethernet cable or <a href="https://www.amazon.de/AVM-MU-MIMO-Dualband-WLAN-5-GHz-Verbindungen-Multi-User-MIMO/dp/B074H1GDBJ/ref=sr_1_5?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&amp;crid=2RXNVJN032HUP&amp;dchild=1&amp;keywords=fritz+wlan+usb+stick+n+v2&amp;qid=1622633494&amp;sprefix=fritz+wlan+usb%2Caps%2C157&amp;sr=8-5">wifi dongle</a></li>
+<li>power supply</li>
+</ul>
+<h3 id="demo">Demo</h3>
+<p>You can see the relay being control through the flashing red led and by the click sound.</p>
+<iframe width="200" height="113" src="https://www.youtube.com/embed/Ih_BLnO3msk?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<h2 id="circuit-diagram">Circuit Diagram</h2>
+<figure><img src="__GHOST_URL__/content/images/2021/07/diagram.png"/>
+</figure>
+
+<h2 id="code">Code</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> RPi.GPIO <span style="color:#66d9ef">as</span> GPIO
+<span style="color:#f92672">from</span> flask <span style="color:#f92672">import</span> Flask, redirect, url_for
+<span style="color:#f92672">import</span> time
+
+relayPin <span style="color:#f92672">=</span> <span style="color:#ae81ff">15</span>  <span style="color:#75715e"># Define the pin to be controlled</span>
+
+GPIO<span style="color:#f92672">.</span>setmode(GPIO<span style="color:#f92672">.</span>BCM)  <span style="color:#75715e"># Choose BCM or BOARD</span>
+GPIO<span style="color:#f92672">.</span>setup(relayPin, GPIO<span style="color:#f92672">.</span>OUT)  <span style="color:#75715e"># Set pin as an output</span>
+GPIO<span style="color:#f92672">.</span>output(relayPin, <span style="color:#66d9ef">False</span>)  <span style="color:#75715e"># set pin value to 0/GPIO.Low/False</span>
+
+app <span style="color:#f92672">=</span> Flask(__name__)
+
+
+<span style="color:#a6e22e">@app</span><span style="color:#f92672">.</span>route(<span style="color:#e6db74">&#39;/&#39;</span>, methods<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#39;GET&#39;</span>])
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">home</span>():
+    <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;&lt;h1&gt;Hello&lt;/h1&gt;&#34;</span>
+
+
+<span style="color:#a6e22e">@app</span><span style="color:#f92672">.</span>route(<span style="color:#e6db74">&#39;/success/&lt;message&gt;&#39;</span>)
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">success</span>(message):
+    <span style="color:#66d9ef">return</span> message
+
+
+<span style="color:#a6e22e">@app</span><span style="color:#f92672">.</span>route(<span style="color:#e6db74">&#39;/open_door&#39;</span>, methods<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#39;POST&#39;</span>])
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">open_door</span>():
+    <span style="color:#66d9ef">try</span>:
+        GPIO<span style="color:#f92672">.</span>output(relayPin, <span style="color:#66d9ef">True</span>)  <span style="color:#75715e"># set pin value to 1/GPIO.High/True</span>
+        time<span style="color:#f92672">.</span>sleep(<span style="color:#ae81ff">0.2</span>)
+        GPIO<span style="color:#f92672">.</span>output(relayPin, <span style="color:#66d9ef">False</span>)  <span style="color:#75715e"># set pin value to 0/GPIO.Low/False</span>
+    <span style="color:#66d9ef">except</span> <span style="color:#a6e22e">KeyboardInterrupt</span>:
+        GPIO<span style="color:#f92672">.</span>output(relayPin, <span style="color:#66d9ef">False</span>)  <span style="color:#75715e"># set pin value to 0/GPIO.Low/False</span>
+        GPIO<span style="color:#f92672">.</span>cleanup()
+    <span style="color:#66d9ef">return</span> redirect(url_for(<span style="color:#e6db74">&#39;success&#39;</span>, message<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;success&#39;</span>))
+
+
+<span style="color:#66d9ef">if</span> __name__ <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;__main__&#39;</span>:
+    <span style="color:#75715e"># Make the Raspberry Pi accessible in the same network through ip</span>
+    app<span style="color:#f92672">.</span>run(host<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;0.0.0.0&#39;</span>)
+</code></pre></div><p>See <a href="https://www.raspberrypi-spy.co.uk/2015/10/how-to-autorun-a-python-script-on-boot-using-systemd/">here</a> for how to run the api after booting the raspberry pi.</p>
+</div>
+    <div class="post__footer">
+      
+        <span><a class="category" href="/categories/raspberry-pi/">raspberry-pi</a><a class="category" href="/categories/relay/">relay</a><a class="category" href="/categories/api/">api</a><a class="category" href="/categories/electronics/">electronics</a><a class="category" href="/categories/python/">python</a><a class="category" href="/categories/flask/">flask</a></span>
+
+
+
+
+      
+
+      
+        <span><a class="tag" href="/tags/raspberry-pi/">raspberry-pi</a><a class="tag" href="/tags/relay/">relay</a><a class="tag" href="/tags/api/">api</a><a class="tag" href="/tags/electronics/">electronics</a><a class="tag" href="/tags/python/">python</a><a class="tag" href="/tags/flask/">flask</a></span>
+
+
+
+
+      
+    </div>
+
+    
+  </div>
+
+
+      </main>
+    </div><footer class="footer footer__base">
+  <ul class="footer__list">
+    <li class="footer__item">
+      &copy;
+      
+        Johannes Pirmann
+        2022
+
+
+      
+    </li>
+    
+      <li class="footer__item">
+        <a
+          class="link"
+          href="/imprint"
+          
+          title=""
+        >
+          Imprint
+        </a>
+      </li>
+
+    
+      <li class="footer__item">
+        <a
+          class="link"
+          href="/privacy-policy"
+          
+          title=""
+        >
+          Privacy Policy
+        </a>
+      </li>
+
+    
+  </ul>
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.fae9ac8895995fe91958b3954be11e96025824a04770726a3531e119ddd2d576.js"
+    integrity="sha256-&#43;umsiJWZX&#43;kZWLOVS&#43;EelgJYJKBHcHJqNTHhGd3S1XY="
+    crossorigin="anonymous"
+  ></script></body>
+</html>
