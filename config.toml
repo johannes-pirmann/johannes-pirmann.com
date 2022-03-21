@@ -1,10 +1,47 @@
 baseURL = "http://example.org/"
 disablePathToLower = true
 languageCode = "en-us"
-title = "Johannes Pirmann"
+
 theme = "Anatole"
+
+[params]
+profilePicture = "images/profile.jpg"
+title = "Johannes Pirmann"
+author = "Johannes Pirmann"
+description = "Hi, I'm a software developer and thinkerer."
 
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+
+
+[menu]
+	[[menu.main]]
+	name = "About"
+	weight = 300
+	identifier = "about"
+	url = "/about"
+
+	[[menu.footer]]
+	name = "Imprint"
+	identifier = "imprint"
+	weight = 1
+	url = "/imprint"
+	
+	[[menu.footer]]
+	name = "Privacy Policy"
+	identifier = "privacy policy"
+	weight = 2
+	url = "/privacy-policy"
+
+
+[[params.socialicons]]
+icon = "fab fa-linkedin"
+title = "LinkedIn"
+url = "https://www.linkedin.com/in/johannes-pirmann/"
+
+[[params.socialicons]]
+icon = "fas fa-envelope"
+title = "E-Mail"
+url = "mailto:johannes.pirmann@pirmannmedia.com"
