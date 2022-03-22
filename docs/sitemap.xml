@@ -5,9 +5,6 @@
     <loc>https://johannes-pirmann.com/</loc>
     <lastmod>2021-10-29T18:39:12+00:00</lastmod>
   </url><url>
-    <loc>https://johannes-pirmann.com/tags/Ansible/</loc>
-    <lastmod>2021-10-29T18:39:12+00:00</lastmod>
-  </url><url>
     <loc>https://johannes-pirmann.com/categories/Ansible/</loc>
     <lastmod>2021-10-29T18:39:12+00:00</lastmod>
   </url><url>
@@ -17,13 +14,7 @@
     <loc>https://johannes-pirmann.com/post/</loc>
     <lastmod>2021-10-29T18:39:12+00:00</lastmod>
   </url><url>
-    <loc>https://johannes-pirmann.com/tags/server/</loc>
-    <lastmod>2021-10-29T18:39:12+00:00</lastmod>
-  </url><url>
     <loc>https://johannes-pirmann.com/categories/server/</loc>
-    <lastmod>2021-10-29T18:39:12+00:00</lastmod>
-  </url><url>
-    <loc>https://johannes-pirmann.com/tags/Server-Setup/</loc>
     <lastmod>2021-10-29T18:39:12+00:00</lastmod>
   </url><url>
     <loc>https://johannes-pirmann.com/categories/Server-Setup/</loc>
@@ -32,31 +23,16 @@
     <loc>https://johannes-pirmann.com/post/setup-ubuntu-20-04-server-with-ansible/</loc>
     <lastmod>2021-10-29T18:39:12+00:00</lastmod>
   </url><url>
-    <loc>https://johannes-pirmann.com/tags/</loc>
-    <lastmod>2021-10-29T18:39:12+00:00</lastmod>
-  </url><url>
-    <loc>https://johannes-pirmann.com/tags/Ubuntu-20.04/</loc>
-    <lastmod>2021-10-29T18:39:12+00:00</lastmod>
-  </url><url>
     <loc>https://johannes-pirmann.com/categories/Ubuntu-20.04/</loc>
     <lastmod>2021-10-29T18:39:12+00:00</lastmod>
   </url><url>
     <loc>https://johannes-pirmann.com/post/how-to-install-nginx-on-ubuntu-20-04/</loc>
     <lastmod>2021-09-29T06:25:21+00:00</lastmod>
   </url><url>
-    <loc>https://johannes-pirmann.com/tags/Nginx/</loc>
-    <lastmod>2021-09-29T06:25:21+00:00</lastmod>
-  </url><url>
     <loc>https://johannes-pirmann.com/categories/Nginx/</loc>
     <lastmod>2021-09-29T06:25:21+00:00</lastmod>
   </url><url>
-    <loc>https://johannes-pirmann.com/tags/Security/</loc>
-    <lastmod>2021-09-29T06:25:21+00:00</lastmod>
-  </url><url>
     <loc>https://johannes-pirmann.com/categories/Security/</loc>
-    <lastmod>2021-09-29T06:25:21+00:00</lastmod>
-  </url><url>
-    <loc>https://johannes-pirmann.com/tags/Ubuntu/</loc>
     <lastmod>2021-09-29T06:25:21+00:00</lastmod>
   </url><url>
     <loc>https://johannes-pirmann.com/categories/Ubuntu/</loc>
@@ -65,13 +41,7 @@
     <loc>https://johannes-pirmann.com/post/add-ssl-certificate-with-lets-encrypt-to-nginx-on-ubuntu-20-04/</loc>
     <lastmod>2021-09-29T06:24:38+00:00</lastmod>
   </url><url>
-    <loc>https://johannes-pirmann.com/tags/Lets-Encrypt/</loc>
-    <lastmod>2021-09-29T06:24:38+00:00</lastmod>
-  </url><url>
     <loc>https://johannes-pirmann.com/categories/Lets-Encrypt/</loc>
-    <lastmod>2021-09-29T06:24:38+00:00</lastmod>
-  </url><url>
-    <loc>https://johannes-pirmann.com/tags/SSL/</loc>
     <lastmod>2021-09-29T06:24:38+00:00</lastmod>
   </url><url>
     <loc>https://johannes-pirmann.com/categories/SSL/</loc>
@@ -80,64 +50,34 @@
     <loc>https://johannes-pirmann.com/post/setup-ubuntu-20-04/</loc>
     <lastmod>2021-09-27T16:29:46+00:00</lastmod>
   </url><url>
-    <loc>https://johannes-pirmann.com/tags/ghost/</loc>
-    <lastmod>2021-08-27T14:59:31+00:00</lastmod>
-  </url><url>
     <loc>https://johannes-pirmann.com/categories/ghost/</loc>
     <lastmod>2021-08-27T14:59:31+00:00</lastmod>
   </url><url>
     <loc>https://johannes-pirmann.com/post/backup-and-restore-ghost/</loc>
     <lastmod>2021-08-27T14:59:31+00:00</lastmod>
   </url><url>
-    <loc>https://johannes-pirmann.com/tags/infrastructure/</loc>
-    <lastmod>2021-08-27T14:59:31+00:00</lastmod>
-  </url><url>
     <loc>https://johannes-pirmann.com/categories/infrastructure/</loc>
-    <lastmod>2021-08-27T14:59:31+00:00</lastmod>
-  </url><url>
-    <loc>https://johannes-pirmann.com/tags/linux/</loc>
     <lastmod>2021-08-27T14:59:31+00:00</lastmod>
   </url><url>
     <loc>https://johannes-pirmann.com/categories/linux/</loc>
     <lastmod>2021-08-27T14:59:31+00:00</lastmod>
   </url><url>
-    <loc>https://johannes-pirmann.com/tags/Bitcoin/</loc>
-    <lastmod>2021-07-09T07:07:12+00:00</lastmod>
-  </url><url>
     <loc>https://johannes-pirmann.com/categories/Bitcoin/</loc>
-    <lastmod>2021-07-09T07:07:12+00:00</lastmod>
-  </url><url>
-    <loc>https://johannes-pirmann.com/tags/Crypto/</loc>
     <lastmod>2021-07-09T07:07:12+00:00</lastmod>
   </url><url>
     <loc>https://johannes-pirmann.com/categories/Crypto/</loc>
     <lastmod>2021-07-09T07:07:12+00:00</lastmod>
   </url><url>
-    <loc>https://johannes-pirmann.com/tags/Cryptocurrency/</loc>
-    <lastmod>2021-07-09T07:07:12+00:00</lastmod>
-  </url><url>
     <loc>https://johannes-pirmann.com/categories/Cryptocurrency/</loc>
-    <lastmod>2021-07-09T07:07:12+00:00</lastmod>
-  </url><url>
-    <loc>https://johannes-pirmann.com/tags/Ethereum/</loc>
     <lastmod>2021-07-09T07:07:12+00:00</lastmod>
   </url><url>
     <loc>https://johannes-pirmann.com/categories/Ethereum/</loc>
     <lastmod>2021-07-09T07:07:12+00:00</lastmod>
   </url><url>
-    <loc>https://johannes-pirmann.com/tags/Ledger/</loc>
-    <lastmod>2021-07-09T07:07:12+00:00</lastmod>
-  </url><url>
     <loc>https://johannes-pirmann.com/categories/Ledger/</loc>
     <lastmod>2021-07-09T07:07:12+00:00</lastmod>
   </url><url>
-    <loc>https://johannes-pirmann.com/tags/Money/</loc>
-    <lastmod>2021-07-09T07:07:12+00:00</lastmod>
-  </url><url>
     <loc>https://johannes-pirmann.com/categories/Money/</loc>
-    <lastmod>2021-07-09T07:07:12+00:00</lastmod>
-  </url><url>
-    <loc>https://johannes-pirmann.com/tags/Nano-X/</loc>
     <lastmod>2021-07-09T07:07:12+00:00</lastmod>
   </url><url>
     <loc>https://johannes-pirmann.com/categories/Nano-X/</loc>
@@ -146,28 +86,19 @@
     <loc>https://johannes-pirmann.com/post/unboxing-of-the-ledger-nano-x/</loc>
     <lastmod>2021-07-09T07:07:12+00:00</lastmod>
   </url><url>
-    <loc>https://johannes-pirmann.com/tags/Wallet/</loc>
-    <lastmod>2021-07-09T07:07:12+00:00</lastmod>
-  </url><url>
     <loc>https://johannes-pirmann.com/categories/Wallet/</loc>
     <lastmod>2021-07-09T07:07:12+00:00</lastmod>
   </url><url>
     <loc>https://johannes-pirmann.com/post/wallets/</loc>
     <lastmod>2021-06-29T13:25:52+00:00</lastmod>
   </url><url>
+    <loc>https://johannes-pirmann.com/categories/aws/</loc>
+    <lastmod>2021-06-16T16:39:48+00:00</lastmod>
+  </url><url>
     <loc>https://johannes-pirmann.com/post/aws-scripts/</loc>
     <lastmod>2021-06-16T16:39:48+00:00</lastmod>
   </url><url>
-    <loc>https://johannes-pirmann.com/tags/aws/</loc>
-    <lastmod>2021-06-16T15:34:57+00:00</lastmod>
-  </url><url>
-    <loc>https://johannes-pirmann.com/categories/aws/</loc>
-    <lastmod>2021-06-16T15:34:57+00:00</lastmod>
-  </url><url>
     <loc>https://johannes-pirmann.com/post/configure-your-aws-development-environment/</loc>
-    <lastmod>2021-06-16T15:34:57+00:00</lastmod>
-  </url><url>
-    <loc>https://johannes-pirmann.com/tags/Getting-Started/</loc>
     <lastmod>2021-06-16T15:34:57+00:00</lastmod>
   </url><url>
     <loc>https://johannes-pirmann.com/categories/Getting-Started/</loc>
@@ -176,20 +107,11 @@
     <loc>https://johannes-pirmann.com/post/raspberry-pi-configuration/</loc>
     <lastmod>2021-06-09T14:30:20+00:00</lastmod>
   </url><url>
-    <loc>https://johannes-pirmann.com/tags/electronics/</loc>
-    <lastmod>2021-06-09T14:30:20+00:00</lastmod>
-  </url><url>
     <loc>https://johannes-pirmann.com/categories/electronics/</loc>
-    <lastmod>2021-06-09T14:30:20+00:00</lastmod>
-  </url><url>
-    <loc>https://johannes-pirmann.com/tags/raspberry-pi/</loc>
     <lastmod>2021-06-09T14:30:20+00:00</lastmod>
   </url><url>
     <loc>https://johannes-pirmann.com/categories/raspberry-pi/</loc>
     <lastmod>2021-06-09T14:30:20+00:00</lastmod>
-  </url><url>
-    <loc>https://johannes-pirmann.com/tags/api/</loc>
-    <lastmod>2021-06-01T16:26:57+00:00</lastmod>
   </url><url>
     <loc>https://johannes-pirmann.com/categories/api/</loc>
     <lastmod>2021-06-01T16:26:57+00:00</lastmod>
@@ -197,28 +119,22 @@
     <loc>https://johannes-pirmann.com/post/control-a-relay/</loc>
     <lastmod>2021-06-01T16:26:57+00:00</lastmod>
   </url><url>
-    <loc>https://johannes-pirmann.com/tags/flask/</loc>
-    <lastmod>2021-06-01T16:26:57+00:00</lastmod>
-  </url><url>
     <loc>https://johannes-pirmann.com/categories/flask/</loc>
-    <lastmod>2021-06-01T16:26:57+00:00</lastmod>
-  </url><url>
-    <loc>https://johannes-pirmann.com/tags/python/</loc>
     <lastmod>2021-06-01T16:26:57+00:00</lastmod>
   </url><url>
     <loc>https://johannes-pirmann.com/categories/python/</loc>
     <lastmod>2021-06-01T16:26:57+00:00</lastmod>
   </url><url>
-    <loc>https://johannes-pirmann.com/tags/relay/</loc>
-    <lastmod>2021-06-01T16:26:57+00:00</lastmod>
-  </url><url>
     <loc>https://johannes-pirmann.com/categories/relay/</loc>
     <lastmod>2021-06-01T16:26:57+00:00</lastmod>
   </url><url>
-    <loc>https://johannes-pirmann.com/post/work/</loc>
+    <loc>https://johannes-pirmann.com/pages/</loc>
     <lastmod>2021-05-26T12:43:37+00:00</lastmod>
   </url><url>
-    <loc>https://johannes-pirmann.com/post/e30-316i/</loc>
+    <loc>https://johannes-pirmann.com/pages/work/</loc>
+    <lastmod>2021-05-26T12:43:37+00:00</lastmod>
+  </url><url>
+    <loc>https://johannes-pirmann.com/pages/e30-316i/</loc>
     <lastmod>2021-05-10T12:13:58+00:00</lastmod>
   </url><url>
     <loc>https://johannes-pirmann.com/about/</loc>
@@ -233,10 +149,9 @@
     <loc>https://johannes-pirmann.com/post/brag-dokument/</loc>
     <lastmod>2021-04-08T14:41:53+00:00</lastmod>
   </url><url>
-    <loc>https://johannes-pirmann.com/tags/career/</loc>
-    <lastmod>2021-04-08T14:41:53+00:00</lastmod>
-  </url><url>
     <loc>https://johannes-pirmann.com/categories/career/</loc>
     <lastmod>2021-04-08T14:41:53+00:00</lastmod>
+  </url><url>
+    <loc>https://johannes-pirmann.com/tags/</loc>
   </url>
 </urlset>

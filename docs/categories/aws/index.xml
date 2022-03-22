@@ -6,7 +6,20 @@
     <description>Recent content in aws on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 16 Jun 2021 15:34:57 +0000</lastBuildDate><atom:link href="https://johannes-pirmann.com/categories/aws/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 16 Jun 2021 16:39:48 +0000</lastBuildDate><atom:link href="https://johannes-pirmann.com/categories/aws/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AWS Scripts</title>
+      <link>https://johannes-pirmann.com/post/aws-scripts/</link>
+      <pubDate>Wed, 16 Jun 2021 16:39:48 +0000</pubDate>
+      
+      <guid>https://johannes-pirmann.com/post/aws-scripts/</guid>
+      
+        <description>In this article I list all code snippets I find/create regarding AWS. Most of those snippets work with the AWS SDK for python &amp;lsquo;boto3&amp;rsquo;.
+Prerequisites Please follow this article to setup your AWS development environment.
+Index  Print all S3 buckets  Print all S3 buckets import boto3 s3 = boto3.resource(&amp;#39;s3&amp;#39;) for bucket </description>
+      
+    </item>
+    
     <item>
       <title>Configure your AWS development environment</title>
       <link>https://johannes-pirmann.com/post/configure-your-aws-development-environment/</link>
