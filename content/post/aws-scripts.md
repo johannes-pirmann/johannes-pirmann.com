@@ -1,6 +1,7 @@
 +++
 author = "Johannes Pirmann"
 date = 2021-06-16T16:39:48Z
+categories = ["aws"]
 description = ""
 draft = false
 image = "__GHOST_URL__/content/images/2021/07/taylor-vick-M5tzZtFCOfs-unsplash--1-.jpg"

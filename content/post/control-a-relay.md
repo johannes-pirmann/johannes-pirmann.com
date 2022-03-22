@@ -6,7 +6,6 @@ description = ""
 draft = false
 image = "__GHOST_URL__/content/images/2021/07/raspberry_pi-relay_controller.jpg"
 slug = "control-a-relay"
-tags = ["raspberry-pi", "relay", "api", "electronics", "python", "flask"]
 title = "Control a Relay with a Raspberry Pi and Python"
 
 +++

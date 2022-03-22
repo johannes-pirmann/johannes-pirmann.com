@@ -6,7 +6,6 @@ description = ""
 draft = false
 image = "__GHOST_URL__/content/images/2021/07/ledger-nano.jpeg"
 slug = "wallets"
-tags = ["Cryptocurrency", "Bitcoin", "Ethereum", "Wallet", "Money", "Crypto"]
 title = "What are wallets and why do I need a wallet?"
 
 +++

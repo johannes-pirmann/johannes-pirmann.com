@@ -6,7 +6,6 @@ description = ""
 draft = false
 image = "__GHOST_URL__/content/images/2021/10/Add-SSL-to-Ubuntu.png"
 slug = "add-ssl-certificate-with-lets-encrypt-to-nginx-on-ubuntu-20-04"
-tags = ["SSL", "Nginx", "Server Setup", "Security", "Ubuntu", "Let's Encrypt", "Ubuntu 20.04"]
 title = "Add SSL Certificate with Lets Encrypt to Nginx on Ubuntu 20.04"
 
 +++

@@ -6,7 +6,6 @@ description = ""
 draft = false
 image = "__GHOST_URL__/content/images/2021/08/ghost.jpeg"
 slug = "backup-and-restore-ghost"
-tags = ["ghost", "infrastructure", "server", "linux"]
 title = "How to backup and restore Ghost"
 
 +++

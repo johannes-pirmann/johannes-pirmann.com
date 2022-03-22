@@ -5,7 +5,6 @@ date = 2021-10-29T18:39:12Z
 description = ""
 draft = false
 slug = "setup-ubuntu-20-04-server-with-ansible"
-tags = ["Ansible", "Ubuntu 20.04", "server", "Server Setup"]
 title = "Setup Ubuntu 20.04 Server with Ansible"
 
 +++

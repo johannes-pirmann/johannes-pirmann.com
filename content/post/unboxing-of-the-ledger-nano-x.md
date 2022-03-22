@@ -6,7 +6,6 @@ description = ""
 draft = false
 image = "__GHOST_URL__/content/images/2021/07/Untitled.jpg"
 slug = "unboxing-of-the-ledger-nano-x"
-tags = ["Ledger", "Bitcoin", "Crypto", "Cryptocurrency", "Wallet", "Nano X", "Money", "Ethereum"]
 title = "Unboxing & Setup of the Ledger Nano X"
 
 +++

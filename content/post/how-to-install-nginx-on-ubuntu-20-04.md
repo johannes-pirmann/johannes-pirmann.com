@@ -6,7 +6,6 @@ description = ""
 draft = false
 image = "__GHOST_URL__/content/images/2021/10/Install-Nginx.png"
 slug = "how-to-install-nginx-on-ubuntu-20-04"
-tags = ["Nginx", "Ubuntu 20.04", "Server Setup", "Ubuntu", "Security"]
 title = "How to install Nginx on Ubuntu 20.04"
 
 +++

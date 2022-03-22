@@ -6,7 +6,6 @@ description = ""
 draft = false
 image = "__GHOST_URL__/content/images/2021/10/Setup-Ubuntu-20.04.png"
 slug = "setup-ubuntu-20-04"
-tags = ["Ubuntu 20.04", "server", "Ubuntu", "Security", "Server Setup"]
 title = "Setup Ubuntu 20.04"
 
 +++

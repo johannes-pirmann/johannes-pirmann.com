@@ -6,7 +6,6 @@ description = ""
 draft = true
 image = "https://images.unsplash.com/photo-1531431057391-da7a1aabd412?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDZ8fGluZnJhc3RydWN0dXJlfGVufDB8fHx8MTYyMzg2MTYzNQ&ixlib=rb-1.2.1&q=80&w=2000"
 slug = "aws-infrastructure-with-python"
-tags = ["aws", "infrastructure", "python"]
 title = "AWS Infrastructure with Python"
 
 +++
