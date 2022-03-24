@@ -10,6 +10,10 @@ profilePicture = "images/profile.jpg"
 title = "Johannes Pirmann"
 author = "Johannes Pirmann"
 description = "Hi, I'm a software developer and thinkerer."
+contentratio = 0.6
+hidesidebar = true
+pygmentsCodeFences = true
+pygmentsUseClasses = true
 
 [markup]
   [markup.goldmark]
@@ -23,6 +27,12 @@ description = "Hi, I'm a software developer and thinkerer."
 	weight = 100
 	identifier = "home"
 	url = "/"
+
+	[[menu.main]]
+	name = "Portfolio"
+	weight = 200
+	identifier = "portfolio"
+	url = "/portfolio"
 
 	[[menu.main]]
 	name = "About"

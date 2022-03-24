@@ -4,7 +4,7 @@ categories = ["Cryptocurrency", "Bitcoin", "Ethereum", "Wallet", "Money", "Crypt
 date = 2021-06-29T13:25:52Z
 description = ""
 draft = false
-image = "__GHOST_URL__/content/images/2021/07/ledger-nano.jpeg"
+thumbnail = "/images/2021/07/ledger-nano.jpeg"
 slug = "wallets"
 title = "What are wallets and why do I need a wallet?"
 

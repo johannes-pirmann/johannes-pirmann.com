@@ -4,7 +4,7 @@ categories = ["aws", "infrastructure", "python"]
 date = 2021-06-16T14:35:20Z
 description = ""
 draft = true
-image = "https://images.unsplash.com/photo-1531431057391-da7a1aabd412?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDZ8fGluZnJhc3RydWN0dXJlfGVufDB8fHx8MTYyMzg2MTYzNQ&ixlib=rb-1.2.1&q=80&w=2000"
+thumbnail = "https://images.unsplash.com/photo-1531431057391-da7a1aabd412?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDZ8fGluZnJhc3RydWN0dXJlfGVufDB8fHx8MTYyMzg2MTYzNQ&ixlib=rb-1.2.1&q=80&w=2000"
 slug = "aws-infrastructure-with-python"
 title = "AWS Infrastructure with Python"
 
@@ -13,7 +13,7 @@ title = "AWS Infrastructure with Python"
 
 ### Prerequisites
 
-Please follow [this article](__GHOST_URL__/configure-your-aws-development-environment/) to setup your [AWS development environment](__GHOST_URL__/configure-your-aws-development-environment/).
+Please follow [this article](/post/configure-your-aws-development-environment/) to setup your [AWS development environment](/post/configure-your-aws-development-environment/).
 
 ### Setting up the directory
 

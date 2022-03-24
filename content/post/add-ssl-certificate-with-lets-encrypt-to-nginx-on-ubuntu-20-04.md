@@ -4,7 +4,7 @@ categories = ["SSL", "Nginx", "Server Setup", "Security", "Ubuntu", "Let's Encry
 date = 2021-09-29T06:24:38Z
 description = ""
 draft = false
-image = "__GHOST_URL__/content/images/2021/10/Add-SSL-to-Ubuntu.png"
+thumbnail = "/images/2021/10/Add-SSL-to-Ubuntu.png"
 slug = "add-ssl-certificate-with-lets-encrypt-to-nginx-on-ubuntu-20-04"
 title = "Add SSL Certificate with Lets Encrypt to Nginx on Ubuntu 20.04"
 
@@ -19,8 +19,8 @@ In this tutorial you will learn how to install **certbot** which communicates wi
 
 **Prerequisites**
 
-* [Setup Ubuntu 20.04](__GHOST_URL__/setup-ubuntu-20-04/)
-* [Install Nginx on Ubuntu 20.04](__GHOST_URL__/how-to-install-nginx-on-ubuntu-20-04/)
+* [Setup Ubuntu 20.04](/post/setup-ubuntu-20-04/)
+* [Install Nginx on Ubuntu 20.04](/post/how-to-install-nginx-on-ubuntu-20-04/)
 * A top-level domain, e.g. **example.com**
 
 ## Step 1 - Install Certbot

@@ -4,7 +4,7 @@ categories = ["electronics", "raspberry-pi"]
 date = 2021-06-09T14:30:20Z
 description = ""
 draft = false
-image = "https://images.unsplash.com/photo-1585146702843-45507b83e662?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDR8fHJhc3BiZXJyeXBpfGVufDB8fHx8MTYyMzI1NjIwMw&ixlib=rb-1.2.1&q=80&w=2000"
+thumbnail = "https://images.unsplash.com/photo-1585146702843-45507b83e662?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDR8fHJhc3BiZXJyeXBpfGVufDB8fHx8MTYyMzI1NjIwMw&ixlib=rb-1.2.1&q=80&w=2000"
 slug = "raspberry-pi-configuration"
 title = "Basic Raspberry Pi Configuration for Headless Mode"
 

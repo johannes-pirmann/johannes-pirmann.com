@@ -4,7 +4,7 @@ categories = ["Nginx", "Ubuntu 20.04", "Server Setup", "Ubuntu", "Security"]
 date = 2021-09-29T06:25:21Z
 description = ""
 draft = false
-image = "__GHOST_URL__/content/images/2021/10/Install-Nginx.png"
+thumbnail = "/images/2021/10/Install-Nginx.png"
 slug = "how-to-install-nginx-on-ubuntu-20-04"
 title = "How to install Nginx on Ubuntu 20.04"
 
@@ -19,7 +19,7 @@ In this tutorial I'm going to cover how to install **Nginx** on an Ubuntu 20.04 
 
 **Prerequisites**
 
-* [Setup Ubuntu 20.04](__GHOST_URL__/setup-ubuntu-20-04/)
+* [Setup Ubuntu 20.04](/post/setup-ubuntu-20-04/)
 * A top-level domain, e.g. **example.com**
 
 ## Step 1 - Login to server
@@ -138,7 +138,7 @@ http://10.0.0.1
 
 You should be greeted by the following message:
 
-{{< figure src="__GHOST_URL__/content/images/2021/09/welcome-to-nginx.png" >}}
+<img src="/images/2021/09/welcome-to-nginx.png">
 
 ## Step 5 - Configure a website
 
@@ -270,7 +270,7 @@ holu@10.0.0.1:~$ sudo systemctl restart nginx
 
 We can now visit our new website. Browse in your browser to **http://example.com** and you should see our simple test website.
 
-{{< figure src="__GHOST_URL__/content/images/2021/09/welcome-holu.png" >}}
+<img src="/images/2021/09/welcome-holu.png">
 
 ## Conclusion
 

@@ -6,11 +6,12 @@ description = ""
 draft = false
 slug = "setup-ubuntu-20-04-server-with-ansible"
 title = "Setup Ubuntu 20.04 Server with Ansible"
+thumbnail = "/images/2022/ubuntu-setup-with-ansible.png"
 
 +++
 
 
-If you want a more hands on approach you can follow the following tutorial: [https://johannes-pirmann.com/setup-ubuntu-20-04/](__GHOST_URL__/setup-ubuntu-20-04/)
+If you want a more hands on approach you can follow the following tutorial: [https://johannes-pirmann.com/setup-ubuntu-20-04/](/post/setup-ubuntu-20-04/)
 
 ## Prerequisites
 

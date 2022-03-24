@@ -4,7 +4,7 @@ date = 2021-04-08T14:41:53Z
 categories = ["career"]
 description = ""
 draft = false
-image = "__GHOST_URL__/content/images/2021/07/journal-ledger.jpg"
+thumbnail = "/images/2021/07/journal-ledger.jpg"
 slug = "brag-dokument"
 title = "Brag Document"
 

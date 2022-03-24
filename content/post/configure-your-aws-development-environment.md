@@ -4,7 +4,7 @@ categories = ["aws", "Getting Started"]
 date = 2021-06-16T15:34:57Z
 description = ""
 draft = false
-image = "https://images.unsplash.com/photo-1534190239940-9ba8944ea261?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDJ8fHRvb2xzfGVufDB8fHx8MTYyMzg2NDg2OQ&ixlib=rb-1.2.1&q=80&w=2000"
+thumbnail = "https://images.unsplash.com/photo-1534190239940-9ba8944ea261?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDJ8fHRvb2xzfGVufDB8fHx8MTYyMzg2NDg2OQ&ixlib=rb-1.2.1&q=80&w=2000"
 slug = "configure-your-aws-development-environment"
 title = "Configure your AWS development environment"
 

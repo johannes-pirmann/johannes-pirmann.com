@@ -23,10 +23,6 @@ Pirmann Media is my freelancing business. I help business with their Shopify sto
 * Shopify store setup
 * Shopify store development/customization
 
-## Certifications
-
-* [Hubspot](https://www.hubspot.com/) - Inbound Certification
-
 ## Social
 
 * [GitHub](https://github.com/johannes-pirmann/)

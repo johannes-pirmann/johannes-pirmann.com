@@ -4,7 +4,7 @@ categories = ["ghost", "infrastructure", "server", "linux"]
 date = 2021-08-27T14:59:31Z
 description = ""
 draft = false
-image = "__GHOST_URL__/content/images/2021/08/ghost.jpeg"
+thumbnail = "/images/2021/08/ghost.jpeg"
 slug = "backup-and-restore-ghost"
 title = "How to backup and restore Ghost"
 

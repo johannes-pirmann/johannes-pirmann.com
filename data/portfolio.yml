@@ -1,0 +1,17 @@
+portfolioitems:
+  - title: Work
+    portfolioitem:
+      - name: Pirmann Media
+        image: '/images/Pirmann_Media_Logo-black-big.png'
+        link: https://pirmannmedia.com
+        description: "Here I do my consulting for other companies."
+        status: 'Ongoing'
+        start: '2017'
+  - title: Car
+    portfolioitem:
+      - name: E30 316i
+        image: '/images/2021/05/IMG_4821.jpeg'
+        link: /pages/e30-316i
+        status: 'Ongoing'
+        description: "Restoring an BMW E30 316i"
+        start: 2021

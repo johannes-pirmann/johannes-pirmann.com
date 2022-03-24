@@ -4,7 +4,7 @@ categories = ["raspberry-pi", "relay", "api", "electronics", "python", "flask"]
 date = 2021-06-01T16:26:57Z
 description = ""
 draft = false
-image = "__GHOST_URL__/content/images/2021/07/raspberry_pi-relay_controller.jpg"
+thumbnail = "/images/2021/07/raspberry_pi-relay_controller.jpg"
 slug = "control-a-relay"
 title = "Control a Relay with a Raspberry Pi and Python"
 
@@ -27,11 +27,12 @@ I chose a Raspberry Pi model B for this project, as I had one laying around. As 
 
 You can see the relay being control through the flashing red led and by the click sound.
 
-<iframe width="200" height="113" src="https://www.youtube.com/embed/Ih_BLnO3msk?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe  src="https://www.youtube.com/embed/Ih_BLnO3msk?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Circuit Diagram
 
-{{< figure src="__GHOST_URL__/content/images/2021/07/diagram.png" >}}
+<img src="/images/2021/07/diagram.png">
+
 
 ## Code
 

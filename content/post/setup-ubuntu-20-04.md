@@ -4,7 +4,7 @@ categories = ["Ubuntu 20.04", "server", "Ubuntu", "Security", "Server Setup"]
 date = 2021-09-27T16:29:46Z
 description = ""
 draft = false
-image = "__GHOST_URL__/content/images/2021/10/Setup-Ubuntu-20.04.png"
+thumbnail = "/images/2021/10/Setup-Ubuntu-20.04.png"
 slug = "setup-ubuntu-20-04"
 title = "Setup Ubuntu 20.04"
 
