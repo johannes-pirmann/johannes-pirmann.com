@@ -35,8 +35,8 @@
     
     <link
       rel="stylesheet"
-      href="/scss/main.min.dd48129ac8fa8b31b5a5a0d72c50c389e3b176809b8dbd7ccdc0ef3c325d78f9.css"
-      integrity="sha256-3UgSmsj6izG1paDXLFDDieOxdoCbjb18zcDvPDJdePk="
+      href="/scss/main.min.622dfedcfc31e24dfb2f12bd121470adf436e40394dff402924505f2e9579e9f.css"
+      integrity="sha256-Yi3&#43;3Pwx4k37LxK9EhRwrfQ25AOU3/QCkkUF8ulXnp8="
       crossorigin="anonymous"
       type="text/css"
     />
@@ -371,6 +371,18 @@ I chose a Raspberry Pi model B for this project, as I had one laying around. As 
         <li class="nav__list-item">
           <a
             
+            href="/portfolio"
+            
+            title=""
+            >Portfolio</a
+          >
+        </li>
+
+      
+        
+        <li class="nav__list-item">
+          <a
+            
             href="/about"
             
             title=""
@@ -402,6 +414,11 @@ I chose a Raspberry Pi model B for this project, as I had one laying around. As 
 
     "
   >
+    
+      <div class="post__thumbnail-wrapper">
+        <img class="post__thumbnail" src="/images/2021/07/raspberry_pi-relay_controller.jpg" alt="Thumbnail image" />
+      </div>
+
     
     <div class="post__content">
       <h1>Control a Relay With a Raspberry Pi and Python</h1>
@@ -435,11 +452,9 @@ I chose a Raspberry Pi model B for this project, as I had one laying around. As 
 </ul>
 <h3 id="demo">Demo</h3>
 <p>You can see the relay being control through the flashing red led and by the click sound.</p>
-<iframe width="200" height="113" src="https://www.youtube.com/embed/Ih_BLnO3msk?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe  src="https://www.youtube.com/embed/Ih_BLnO3msk?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <h2 id="circuit-diagram">Circuit Diagram</h2>
-<figure><img src="__GHOST_URL__/content/images/2021/07/diagram.png"/>
-</figure>
-
+<img src="/images/2021/07/diagram.png">
 <h2 id="code">Code</h2>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> RPi.GPIO <span style="color:#66d9ef">as</span> GPIO
 <span style="color:#f92672">from</span> flask <span style="color:#f92672">import</span> Flask, redirect, url_for

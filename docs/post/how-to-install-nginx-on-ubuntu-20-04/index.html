@@ -35,8 +35,8 @@
     
     <link
       rel="stylesheet"
-      href="/scss/main.min.dd48129ac8fa8b31b5a5a0d72c50c389e3b176809b8dbd7ccdc0ef3c325d78f9.css"
-      integrity="sha256-3UgSmsj6izG1paDXLFDDieOxdoCbjb18zcDvPDJdePk="
+      href="/scss/main.min.622dfedcfc31e24dfb2f12bd121470adf436e40394dff402924505f2e9579e9f.css"
+      integrity="sha256-Yi3&#43;3Pwx4k37LxK9EhRwrfQ25AOU3/QCkkUF8ulXnp8="
       crossorigin="anonymous"
       type="text/css"
     />
@@ -368,6 +368,18 @@
         <li class="nav__list-item">
           <a
             
+            href="/portfolio"
+            
+            title=""
+            >Portfolio</a
+          >
+        </li>
+
+      
+        
+        <li class="nav__list-item">
+          <a
+            
             href="/about"
             
             title=""
@@ -400,6 +412,11 @@
     "
   >
     
+      <div class="post__thumbnail-wrapper">
+        <img class="post__thumbnail" src="/images/2021/10/Install-Nginx.png" alt="Thumbnail image" />
+      </div>
+
+    
     <div class="post__content">
       <h1>How to Install Nginx on Ubuntu 20.04</h1>
       
@@ -427,7 +444,7 @@
 </blockquote>
 <p><strong>Prerequisites</strong></p>
 <ul>
-<li><a href="__GHOST_URL__/setup-ubuntu-20-04/">Setup Ubuntu 20.04</a></li>
+<li><a href="/post/setup-ubuntu-20-04/">Setup Ubuntu 20.04</a></li>
 <li>A top-level domain, e.g. <strong>example.com</strong></li>
 </ul>
 <h2 id="step-1---login-to-server">Step 1 - Login to server</h2>
@@ -490,9 +507,7 @@ Nginx HTTP <span style="color:#f92672">(</span>v6<span style="color:#f92672">)</
 </code></pre><p>We can also verify the status by navigating to our <strong>IP</strong> address in the browser:</p>
 <pre><code>http://10.0.0.1
 </code></pre><p>You should be greeted by the following message:</p>
-<figure><img src="__GHOST_URL__/content/images/2021/09/welcome-to-nginx.png"/>
-</figure>
-
+<img src="/images/2021/09/welcome-to-nginx.png">
 <h2 id="step-5---configure-a-website">Step 5 - Configure a website</h2>
 <p>Now, we are going to configure a test website and point our domain <strong>example.com</strong> to it.</p>
 <h3 id="step-51---create-the-content-directory">Step 5.1 - Create the content directory</h3>
@@ -557,9 +572,7 @@ nginx: configuration file /etc/nginx/nginx.conf test is successful
 <p>After confirming our setup of <strong>Nginx</strong> we can now reload it and make our changes active.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">holu@10.0.0.1:~$ sudo systemctl restart nginx
 </code></pre></div><p>We can now visit our new website. Browse in your browser to <strong><a href="http://example.com">http://example.com</a></strong> and you should see our simple test website.</p>
-<figure><img src="__GHOST_URL__/content/images/2021/09/welcome-holu.png"/>
-</figure>
-
+<img src="/images/2021/09/welcome-holu.png">
 <h2 id="conclusion">Conclusion</h2>
 <p>We were able to install <strong>Nginx</strong> and configure it to point to our new website.</p>
 <p>To add an SSL Certificate to your website follow this article: <a href="__GHOST_URL__/add-ssl-certificate-with-lets-encrypt-to-nginx-on-ubuntu-20-04/">Add SSL Certificate with Lets Encrypt to Nginx on Ubuntu 20.04</a></p>
