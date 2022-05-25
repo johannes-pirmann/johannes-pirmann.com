@@ -2,6 +2,7 @@ baseURL = "https://johannes-pirmann.com/"
 disablePathToLower = true
 languageCode = "en-us"
 publishDir = "docs"
+uglyurl = true
 
 theme = "Anatole"
 
@@ -39,6 +40,12 @@ pygmentsUseClasses = true
 	weight = 300
 	identifier = "about"
 	url = "/about"
+
+	[[menu.main]]
+	name = "CV"
+	weight = 400
+	identifier = "cv"
+	url = "/CV-Johannes-Pirmann.pdf"
 
 	[[menu.footer]]
 	name = "Imprint"
